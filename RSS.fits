@@ -1,0 +1,665 @@
+SIMPLE  =                    T / Standard FITS format                           BITPIX  =                    8 / Character data                                 NAXIS   =                    1 / Text string                                    NAXIS1  =                24676 / Number of characters                           VOTMETA =                    T / Table metadata in VOTable format               EXTEND  =                    T / There are standard extensions                  COMMENT                                                                         COMMENT The data in this primary HDU consists of bytes which                    COMMENT comprise a VOTABLE document.                                            COMMENT The VOTable describes the metadata of the table contained               COMMENT in the following BINTABLE extension.                                    COMMENT Such a BINTABLE extension can be used on its own as a perfectly         COMMENT good table, but the information from this HDU may provide some          COMMENT useful additional metadata.                                             COMMENT There is one following BINTABLE.                                        NTABLE  =                    1 / Number of following BINTABLE HDUs              END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             <?xml version='1.0'?>
+<VOTABLE version="1.3"
+ xmlns="http://www.ivoa.net/xml/VOTable/v1.3">
+<!--
+ !  VOTable written by STIL version 3.2.2-debian (uk.ac.starlink.votable.VOTableWriter)
+ !  at 2023-02-06T11:49:52
+ !-->
+<RESOURCE>
+<!-- Describes BINTABLE extensions in the following HDU.-->
+<TABLE name="Joined" nrows="15">
+<PARAM arraysize="19" datatype="char" name="DATE-HDU" value="2022-09-29T09:52:50">
+<DESCRIPTION>Date of HDU creation (UTC)</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="12" datatype="char" name="STILVERS" value="3.2.2-debian">
+<DESCRIPTION>Version of STIL software</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="42" datatype="char" name="STILCLAS" value="uk.ac.starlink.votable.FitsPlusTableWriter">
+<DESCRIPTION>Author class in STIL so</DESCRIPTION>
+</PARAM>
+<FIELD datatype="float" name="ID_1"/>
+<FIELD datatype="double" name="RA_1"/>
+<FIELD datatype="double" name="Dec_1"/>
+<FIELD datatype="double" name="acs_mag"/>
+<FIELD datatype="double" name="axial_ratio"/>
+<FIELD datatype="double" name="rh"/>
+<FIELD datatype="double" name="rh_kpc"/>
+<FIELD datatype="double" name="log_rh_kpc"/>
+<FIELD datatype="double" name="gini"/>
+<FIELD datatype="float" name="conc"/>
+<FIELD datatype="double" name="asym"/>
+<FIELD datatype="float" name="c_int"/>
+<FIELD datatype="float" name="c_linee"/>
+<FIELD datatype="float" name="c_svm"/>
+<FIELD datatype="double" name="u_cfht"/>
+<FIELD datatype="double" name="u_cfht_err"/>
+<FIELD datatype="double" name="B_subaru"/>
+<FIELD datatype="double" name="B_subaru_err"/>
+<FIELD datatype="double" name="V_subaru"/>
+<FIELD datatype="double" name="V_subaru_err"/>
+<FIELD datatype="double" name="g_subaru"/>
+<FIELD datatype="float" name="g_subaru_err"/>
+<FIELD datatype="double" name="r_subaru"/>
+<FIELD datatype="double" name="K_fluxx" unit="erg/cm/sec^2">
+<DESCRIPTION>m AB = -2.5 log 10f v - 48.60</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="r_subaru_err"/>
+<FIELD datatype="double" name="k_corr_optic_val"/>
+<FIELD datatype="double" name="optic_val"/>
+<FIELD datatype="double" name="optic_val_2">
+<DESCRIPTION>optic_val / -2.5 (Expression: optic_val / -2.5)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="i_subaru"/>
+<FIELD datatype="float" name="i_subaru_err"/>
+<FIELD datatype="double" name="z_subaru"/>
+<FIELD datatype="float" name="z_subaru_err"/>
+<FIELD datatype="double" name="K_ctio"/>
+<FIELD datatype="double" name="K_ctio_err"/>
+<FIELD datatype="double" name="i_cfht"/>
+<FIELD datatype="double" name="i_cfht_err"/>
+<FIELD datatype="double" name="u_sdsst"/>
+<FIELD datatype="double" name="u_sdss_err"/>
+<FIELD datatype="double" name="g_sdsst"/>
+<FIELD datatype="double" name="g_sdss_err"/>
+<FIELD datatype="double" name="r_sdsst"/>
+<FIELD datatype="double" name="r_sdss_err"/>
+<FIELD datatype="double" name="i_sdsst"/>
+<FIELD datatype="double" name="i_sdss_err"/>
+<FIELD datatype="double" name="z_sdsst"/>
+<FIELD datatype="double" name="z_sdss_err"/>
+<FIELD datatype="double" name="f814w"/>
+<FIELD datatype="float" name="f814_err"/>
+<FIELD datatype="double" name="NB816"/>
+<FIELD datatype="float" name="NB816_err"/>
+<FIELD datatype="double" name="Ebv"/>
+<FIELD arraysize="8" datatype="char" name="X_catalogue"/>
+<FIELD datatype="float" name="cid_x"/>
+<FIELD datatype="double" name="ra_x_1"/>
+<FIELD datatype="double" name="dec_x_1"/>
+<FIELD datatype="float" name="fsoft"/>
+<FIELD datatype="float" name="fhard"/>
+<FIELD datatype="double" name="zphot_salvato"/>
+<FIELD datatype="double" name="lum_dist_Mpc">
+<DESCRIPTION>Expression: luminosityDistance( zphot_salvato, 70, 0.3, 0.7)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="lum_dist_cm" unit="cm">
+<DESCRIPTION>lum_dist_Mpc * 3.086 * pow(10,24)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="corrK_u_cfht"/>
+<FIELD datatype="double" name="corrK_B_subaru"/>
+<FIELD datatype="double" name="corrK_V_subaru"/>
+<FIELD datatype="double" name="corrK_g_subaru"/>
+<FIELD datatype="double" name="corrK_r_subaru"/>
+<FIELD datatype="double" name="corrK_i_subaru"/>
+<FIELD datatype="double" name="corrK_z_subaru"/>
+<FIELD datatype="double" name="corrK_K_ctio"/>
+<FIELD datatype="double" name="corrK_f814w"/>
+<FIELD datatype="double" name="corrK_nb816"/>
+<FIELD datatype="double" name="MagAbs70_u_cfht"/>
+<FIELD datatype="double" name="MagAbs70_B_subaru"/>
+<FIELD datatype="double" name="B_Z"/>
+<FIELD datatype="double" name="MagAbs70_V_subaru"/>
+<FIELD datatype="double" name="MagAbs70_g_subaru"/>
+<FIELD datatype="double" name="MagAbs70_r_subaru"/>
+<FIELD datatype="double" name="MagAbs70_i_subaru"/>
+<FIELD datatype="double" name="MagAbs70_z_subaru"/>
+<FIELD datatype="double" name="MagAbs70_K_ctio"/>
+<FIELD datatype="double" name="MagAbs70_f814w"/>
+<FIELD datatype="double" name="MagAbs70_nb816"/>
+<FIELD datatype="double" name="U_B"/>
+<FIELD datatype="double" name="errMagAbs70_u_cfht"/>
+<FIELD datatype="double" name="errMagAbs70_B_subaru"/>
+<FIELD datatype="float" name="errMagAbs70_V_subaru"/>
+<FIELD datatype="double" name="errMagAbs70_g_subaru"/>
+<FIELD datatype="float" name="errMagAbs70_r_subaru"/>
+<FIELD datatype="float" name="errMagAbs70_i_subaru"/>
+<FIELD datatype="float" name="errMagAbs70_z_subaru"/>
+<FIELD datatype="double" name="errMagAbs70_K_ctio"/>
+<FIELD datatype="double" name="errMagAbs70_f814w"/>
+<FIELD datatype="float" name="errMagAbs70_nb816"/>
+<FIELD datatype="double" name="KcorrectedMag_u_cfht"/>
+<FIELD datatype="double" name="KcorrectedMag_B_subaru"/>
+<FIELD datatype="double" name="KcorrectedMag_V_subaru"/>
+<FIELD datatype="double" name="KcorrectedMag_r_subaru"/>
+<FIELD datatype="double" name="KcorrectedMag_i_subaru"/>
+<FIELD datatype="double" name="KcorrectedMag_z_subaru"/>
+<FIELD datatype="double" name="KcorrectedMag_K_ctio"/>
+<FIELD datatype="double" name="KcorrectedMag_f814w"/>
+<FIELD datatype="double" name="KcorrectedMag_nb816"/>
+<FIELD datatype="double" name="mtol_u_cfht"/>
+<FIELD datatype="double" name="mtol_B_subaru"/>
+<FIELD datatype="double" name="mtol_V_subaru"/>
+<FIELD datatype="double" name="mtol_g_subaru"/>
+<FIELD datatype="double" name="mtol_r_subaru"/>
+<FIELD datatype="double" name="mtol_i_subaru"/>
+<FIELD datatype="double" name="mtol_z_subaru"/>
+<FIELD datatype="double" name="mtol_K_ctio"/>
+<FIELD datatype="double" name="mtol_f814w"/>
+<FIELD datatype="double" name="mtol_nb816"/>
+<FIELD datatype="double" name="mets"/>
+<FIELD datatype="double" name="b300"/>
+<FIELD datatype="double" name="b1000"/>
+<FIELD datatype="double" name="chi2"/>
+<FIELD datatype="double" name="mass70"/>
+<FIELD datatype="double" name="intsfh70"/>
+<FIELD datatype="double" name="Fhard_Foptisubaru"/>
+<FIELD arraysize="9" datatype="char" name="id_x">
+<DESCRIPTION>String source ID ("cid_" or "lid_"+Source_number)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="RA_x_2">
+<DESCRIPTION>Chandra Right Ascension (J2000)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="DEC_x_2">
+<DESCRIPTION>Chandra Declination (J2000)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="pos_err">
+<DESCRIPTION>X-ray positional error [arcsec]</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="DET_ML_F">
+<DESCRIPTION>Maximum likelihood detection value in 0.5-7 keV band</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="rate_F">
+<DESCRIPTION>0.5-7 keV count rate [counts/s]</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="rate_F_err">
+<DESCRIPTION>0.5-7 keV count rate error [counts/s]</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="flux_F">
+<DESCRIPTION>0.5-10 keV flux [erg/s/cm2]</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="flux_F_err">
+<DESCRIPTION>0.5-10 keV flux error [erg/s/cm2]</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="snr_F">
+<DESCRIPTION>0.5-7 keV signal-to-noise ratio</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="exptime_F">
+<DESCRIPTION>0.5-7 keV exposure time [ks]</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="cts_ap_F">
+<DESCRIPTION>0.5-7 keV aperture photometry counts [counts]</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="cts_ap_F_err">
+<DESCRIPTION>0.5-7 keV aperture photometry counts error [counts]</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="DET_ML_S">
+<DESCRIPTION>Maximum likelihood detection value in 0.5-2 keV band</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="rate_S">
+<DESCRIPTION>0.5-2 keV count rate [counts/s]</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="rate_S_err">
+<DESCRIPTION>0.5-2 keV count rate error [counts/s]</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="flux_S">
+<DESCRIPTION>0.5-2 keV flux [erg/s/cm2]</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="flux_S_err">
+<DESCRIPTION>0.5-2 keV flux error [erg/s/cm2]</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="snr_S">
+<DESCRIPTION>0.5-2 keV signal-to-noise ratio</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="exptime_S">
+<DESCRIPTION>0.5-2 keV exposure time [ks]</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="cts_ap_S">
+<DESCRIPTION>0.5-2 keV aperture photometry counts [counts]</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="cts_ap_S_err">
+<DESCRIPTION>0.5-2 keV aperture photometry counts error [counts]</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="DET_ML_H">
+<DESCRIPTION>Maximum likelihood detection value in 2-7 keV band</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="rate_H">
+<DESCRIPTION>2-7 keV count rate [counts/s]</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="rate_H_err">
+<DESCRIPTION>2-7 keV count rate error [counts/s]</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="flux_H">
+<DESCRIPTION>2-10 keV flux [erg/s/cm2]</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="flux_H_err">
+<DESCRIPTION>2-10 keV flux error [erg/s/cm2]</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="snr_H">
+<DESCRIPTION>2-7 keV signal-to-noise ratio</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="exptime_H">
+<DESCRIPTION>2-7 keV exposure time [ks]</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="cts_ap_H">
+<DESCRIPTION>2-7 keV aperture photometry counts [counts]</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="cts_ap_H_err">
+<DESCRIPTION>2-7 keV aperture photometry counts error [counts]</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="HR">
+<DESCRIPTION>Hardness Ratio, (H-S)/(H+S)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="HR_lo_lim">
+<DESCRIPTION>Hardness Ratio 90% lower limit</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="HR_up_lim">
+<DESCRIPTION>Hardness Ratio 90% upper limit</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="kflux_s" unit="erg/sec/cm^2">
+<DESCRIPTION>kcorrectedflux_s =  pow (1 + zphot_salvato, 1.9-2 )* flux_S</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="kflux_h" unit="erg/sec/cm^2">
+<DESCRIPTION>kcorrectedflux_h =  pow (1 + zphot_salvato, 1.9-2 )* flux_H</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="kflux_f" unit="erg/sec/cm^2">
+<DESCRIPTION>kcorrected flux_F =  pow (1 + zphot_salvato, 1.9-2 )* flux_F</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="kcorrected_luminocity_flux_s" unit="erg/sec">
+<DESCRIPTION>Kcorrecte Luminocity = 4* PI * pow ( lum_dist_cm, 2)* Kflux_s</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="kcorrected_luminocity_flux_H" unit="erg/sec">
+<DESCRIPTION>Kcorrecte Luminocity = 4* PI * pow ( lum_dist_cm, 2)* Kflux_h</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="log(kcorrected_luminocity_flux_H)">
+<DESCRIPTION>Expression: log10(kcorrected_luminocity_flux_H)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="kcorrected_luminocity_flux_f" unit="erg/sec">
+<DESCRIPTION>Kcorrecte Luminocity = 4* PI * pow ( lum_dist_cm, 2)* Kflux_f</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="Separation_1" ucd="pos.angDistance" unit="arcsec">
+<DESCRIPTION>Distance between matched objects along a great circle</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="HR_ratio_Chandra" unit="erg/sec/cm^2">
+<DESCRIPTION>kflux_h/ kflux_s (Expression: kflux_h/ kflux_s)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="int" name="xid">
+<VALUES null='-2147483648'/>
+</FIELD>
+<FIELD arraysize="21" datatype="char" name="iau_name"/>
+<FIELD datatype="double" name="ra_2"/>
+<FIELD datatype="double" name="dec_2"/>
+<FIELD datatype="float" name="poserr"/>
+<FIELD datatype="float" name="s0520"/>
+<FIELD datatype="float" name="s_err0520"/>
+<FIELD datatype="float" name="soft_band_err">
+<DESCRIPTION>s_err0520 / s0520 * 100 (Expression: s_err0520 / s0520 * 100)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="cts_0520">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="cts_err_0520">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="double" name="L_0520"/>
+<FIELD datatype="float" name="bkg_cts_0520"/>
+<FIELD datatype="float" name="exptime_0520"/>
+<FIELD datatype="float" name="s210"/>
+<FIELD datatype="float" name="s_err210"/>
+<FIELD datatype="short" name="cts_210">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="float" name="full_band_err">
+<DESCRIPTION>s_err210 / s210 * 100 (Expression: s_err210 / s210 * 100)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="cts_err_210">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="float" name="L_210"/>
+<FIELD datatype="float" name="bkg_cts_210"/>
+<FIELD datatype="float" name="exptime_210"/>
+<FIELD datatype="float" name="s510"/>
+<FIELD datatype="float" name="s_err510"/>
+<FIELD datatype="float" name="hard_band_err">
+<DESCRIPTION>s_err510 / s510 * 100 (Expression: s_err510 / s510 * 100)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="short" name="cts_510">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="short" name="cts_err_510">
+<VALUES null='-32768'/>
+</FIELD>
+<FIELD datatype="float" name="L_510"/>
+<FIELD datatype="float" name="bkg_cts_510"/>
+<FIELD datatype="float" name="exptime_510"/>
+<FIELD datatype="double" name="Kc_1" unit="erg/sec/cm^2">
+<DESCRIPTION>K-correcte(0520)=  pow (1 + zphot_salvato, 1.9-2 )* o520 * 10e-14</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="kc_2" unit="erg/sec/cm^2"/>
+<FIELD datatype="double" name="kc_3" unit="erg/sec/cm^2"/>
+<FIELD datatype="double" name="Kcorrected_lum_0520" unit="erg/cm">
+<DESCRIPTION>Kcorrecte Luminocity = 4* PI * pow ( lum_dist_cm, 2)* Kc_1</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="Kcorrected_lum_510" unit="erg/sec"/>
+<FIELD datatype="double" name="Kcorrected_lum_210" unit="erg/sec"/>
+<FIELD datatype="double" name="log10(Kcorrected_lum_210)">
+<DESCRIPTION>Expression: log10(Kcorrected_lum_210)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="kflux_1">
+<DESCRIPTION>kc_1 +kc_3 - kc_2 (Expression: kc_1 +kc_3 - kc_2)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="Xray_to_optical">
+<DESCRIPTION>kflux_1/ k_corr_optic_val (Expression: kflux_1/ k_corr_optic_val)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="Log(X/0)">
+<DESCRIPTION>log 10(Xray_to_optical) (Expression: log10(Xray_to_optical))</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="HR_1" unit="erg/sec/cm^2">
+<DESCRIPTION>(kc_2-kc_3) / kc_1 (Expression: (kc_3) / kc_1)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="HR_ratio" unit="erg/sec/cm^2">
+<DESCRIPTION>kc_3 / kc_1 (Expression: kc_3 / kc_1)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="HR_no_kcorr_1">
+<DESCRIPTION>(s210-s510) / s0520 (Expression: (s210-s510) / s0520)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="HR_no_kcorr_2">
+<DESCRIPTION>s210 / s0520 (Expression: s210 / s0520)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="Separation_1a" ucd="pos.angDistance" unit="arcsec">
+<DESCRIPTION>Distance between matched objects along a great circle</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="16" datatype="char" name="_RAJ2000_1" unit="deg">
+<DESCRIPTION>From here Verdaulaki2021 Table 1</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="16" datatype="char" name="_DEJ2000_1" unit="deg"/>
+<FIELD arraysize="3" datatype="char" name="All_1"/>
+<FIELD datatype="int" name="ID_2a">
+<VALUES null='-2147483648'/>
+</FIELD>
+<FIELD datatype="float" name="DL" unit="arcsec"/>
+<FIELD datatype="float" name="DS" unit="arcsec"/>
+<FIELD datatype="float" name="DLhs" unit="arcsec"/>
+<FIELD datatype="float" name="DShs" unit="arcsec"/>
+<FIELD datatype="int" name="BA" unit="deg">
+<VALUES null='-2147483648'/>
+</FIELD>
+<FIELD arraysize="8" datatype="char" name="FR"/>
+<FIELD arraysize="1" datatype="char" name="u_FR"/>
+<FIELD arraysize="2" datatype="char" name="n_FR"/>
+<FIELD datatype="float" name="_RA_1" unit="deg"/>
+<FIELD datatype="float" name="_DE_1" unit="deg"/>
+<FIELD datatype="double" name="Separation_1c" ucd="pos.angDistance" unit="arcsec">
+<DESCRIPTION>Distance between matched objects along a great circle</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="12" datatype="char" name="_RAJ2000_2" unit="deg">
+<DESCRIPTION>From here Verdaulaki2021 Table 1_part2</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="12" datatype="char" name="_DEJ2000_2" unit="deg"/>
+<FIELD arraysize="3" datatype="char" name="All_2"/>
+<FIELD datatype="int" name="ID_1a">
+<VALUES null='-2147483648'/>
+</FIELD>
+<FIELD arraysize="19" datatype="char" name="COSMOSVLA3"/>
+<FIELD datatype="float" name="RAJ2000_1" unit="deg"/>
+<FIELD datatype="float" name="DEJ2000_1" unit="deg"/>
+<FIELD datatype="float" name="S3GHz" unit="mJy"/>
+<FIELD datatype="float" name="e_S3GHz" unit="mJy"/>
+<FIELD datatype="float" name="z"/>
+<FIELD arraysize="1" datatype="char" name="n_z"/>
+<FIELD arraysize="8" datatype="char" name="Class3GHz"/>
+<FIELD arraysize="1" datatype="char" name="u_Class3GHz"/>
+<FIELD arraysize="4" datatype="char" name="Class1_4GHz"/>
+<FIELD arraysize="1" datatype="char" name="radioexcess"/>
+<FIELD datatype="int" name="XrayGroup">
+<VALUES null='-2147483648'/>
+</FIELD>
+<FIELD datatype="float" name="LAS" unit="arcsec"/>
+<FIELD datatype="float" name="D_1" unit="kpc"/>
+<FIELD arraysize="14" datatype="char" name="COSMOSVLADP_1"/>
+<FIELD arraysize="1" datatype="char" name="n_COSMOSVLADP"/>
+<FIELD arraysize="3" datatype="char" name="All"/>
+<FIELD datatype="int" name="ID_2b">
+<DESCRIPTION>From here Verdaulaki 2021 table 2</DESCRIPTION>
+<VALUES null='-2147483648'/>
+</FIELD>
+<FIELD datatype="float" name="SFR_IR_UV_" unit="solMass/yr"/>
+<FIELD datatype="float" name="logM_" unit="log(solMass)"/>
+<FIELD arraysize="1" datatype="char" name="SEDAGN_1"/>
+<FIELD datatype="int" name="CtpID">
+<VALUES null='-2147483648'/>
+</FIELD>
+<FIELD arraysize="3" datatype="char" name="n_CtpID"/>
+<FIELD arraysize="3" datatype="char" name="OClass"/>
+<FIELD arraysize="16" datatype="char" name="_RAJ2000_1a" unit="deg">
+<DESCRIPTION>From here Verdaulaki 2021 table 3</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="16" datatype="char" name="_DEJ2000_1a" unit="deg"/>
+<FIELD datatype="int" name="ID_1b">
+<VALUES null='-2147483648'/>
+</FIELD>
+<FIELD arraysize="8" datatype="char" name="RadioClass"/>
+<FIELD datatype="float" name="lambdar"/>
+<FIELD datatype="float" name="lambdark"/>
+<FIELD datatype="float" name="logLjet" unit="log(1e-07W)"/>
+<FIELD datatype="float" name="LX_Lradio"/>
+<FIELD datatype="float" name="logMBH" unit="log(solMass)"/>
+<FIELD datatype="float" name="_RA_2" unit="deg"/>
+<FIELD datatype="float" name="_DE_2" unit="deg"/>
+<FIELD datatype="double" name="Separation_1d" ucd="pos.angDistance" unit="arcsec">
+<DESCRIPTION>Distance between matched objects along a great circle</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="16" datatype="char" name="_RAJ2000_2a" unit="deg">
+<DESCRIPTION>From here Verdaulaki2021 Table 4</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="16" datatype="char" name="_DEJ2000_2a" unit="deg"/>
+<FIELD datatype="int" name="ID_2c">
+<VALUES null='-2147483648'/>
+</FIELD>
+<FIELD datatype="float" name="D_2" unit="kpc"/>
+<FIELD datatype="float" name="_RA" unit="deg"/>
+<FIELD datatype="float" name="_DE" unit="deg"/>
+<FIELD datatype="double" name="Separation_1e" ucd="pos.angDistance" unit="arcsec">
+<DESCRIPTION>Distance between matched objects along a great circle</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="14" datatype="char" name="_RAJ2000_1b" unit="deg">
+<DESCRIPTION>From here Smolcic 2017 3GHz catalogue</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="14" datatype="char" name="_DEJ2000_1b" unit="deg"/>
+<FIELD datatype="int" name="VLA">
+<VALUES null='-2147483648'/>
+</FIELD>
+<FIELD datatype="float" name="RAJ2000_2" unit="deg"/>
+<FIELD datatype="float" name="DEJ2000_2" unit="deg"/>
+<FIELD datatype="int" name="Multi">
+<VALUES null='-2147483648'/>
+</FIELD>
+<FIELD arraysize="10" datatype="char" name="CatCtp"/>
+<FIELD datatype="int" name="Ctp">
+<VALUES null='-2147483648'/>
+</FIELD>
+<FIELD datatype="float" name="RAcdeg" unit="deg"/>
+<FIELD datatype="float" name="DEcdeg" unit="deg"/>
+<FIELD datatype="float" name="Sep" unit="arcsec"/>
+<FIELD datatype="float" name="Pfalse"/>
+<FIELD datatype="float" name="zbest"/>
+<FIELD datatype="float" name="F3GHz" unit="uJy"/>
+<FIELD datatype="float" name="logL10cm" unit="log(W/Hz)"/>
+<FIELD datatype="float" name="logL21cm" unit="log(W/Hz)"/>
+<FIELD datatype="float" name="logLTIRSF" unit="log(solLum)"/>
+<FIELD datatype="double" name="SFR" unit="solMass/yr"/>
+<FIELD arraysize="1" datatype="char" name="XrayAGN"/>
+<FIELD arraysize="1" datatype="char" name="MIRAGN"/>
+<FIELD arraysize="1" datatype="char" name="SEDAGN_2"/>
+<FIELD arraysize="1" datatype="char" name="QMLAGN"/>
+<FIELD arraysize="1" datatype="char" name="SFG"/>
+<FIELD arraysize="1" datatype="char" name="CleanSFG"/>
+<FIELD arraysize="1" datatype="char" name="HLAGN"/>
+<FIELD arraysize="1" datatype="char" name="MLAGN"/>
+<FIELD arraysize="1" datatype="char" name="RExcess"/>
+<FIELD datatype="int" name="flagC15">
+<VALUES null='-2147483648'/>
+</FIELD>
+<FIELD datatype="double" name="Separation_1f" ucd="pos.angDistance" unit="arcsec">
+<DESCRIPTION>Distance between matched objects along a great circle</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="14" datatype="char" name="_RAJ2000_2b" unit="deg"/>
+<FIELD arraysize="14" datatype="char" name="_DEJ2000_2b" unit="deg"/>
+<FIELD arraysize="19" datatype="char" name="COSMOSVLADP_2"/>
+<FIELD arraysize="19" datatype="char" name="COSMOSVLA"/>
+<FIELD datatype="float" name="e_RAJ2000" unit="arcsec"/>
+<FIELD datatype="float" name="e_DEJ2000" unit="arcsec"/>
+<FIELD datatype="float" name="Sp_1_4_" unit="mJy"/>
+<FIELD datatype="float" name="e_Sp_1_4_" unit="mJy"/>
+<FIELD datatype="float" name="Sp_1_4_c" unit="mJy"/>
+<FIELD datatype="float" name="Si_1_4_" unit="mJy"/>
+<FIELD datatype="float" name="e_Si_1_4_" unit="mJy"/>
+<FIELD datatype="float" name="rmsbg" unit="mJy"/>
+<FIELD datatype="float" name="Bmaj" unit="arcsec"/>
+<FIELD datatype="float" name="Bmin" unit="arcsec"/>
+<FIELD datatype="float" name="PA" unit="deg"/>
+<FIELD datatype="int" name="R">
+<VALUES null='-2147483648'/>
+</FIELD>
+<FIELD datatype="int" name="M">
+<VALUES null='-2147483648'/>
+</FIELD>
+<FIELD datatype="int" name="Cat">
+<VALUES null='-2147483648'/>
+</FIELD>
+<FIELD datatype="int" name="Det">
+<VALUES null='-2147483648'/>
+</FIELD>
+<FIELD arraysize="6" datatype="char" name="Simbad"/>
+<FIELD arraysize="12" datatype="char" name="RAJ2000" unit="h:m:s"/>
+<FIELD arraysize="12" datatype="char" name="DEJ2000" unit="d:m:s"/>
+<FIELD datatype="double" name="RA2000" unit="degrees">
+<DESCRIPTION>FK5 J2000.0 Right Ascension</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="DEC2000" unit="degrees">
+<DESCRIPTION>FK5 J2000.0 Declination</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="Separation" ucd="pos.angDistance" unit="arcsec">
+<DESCRIPTION>Distance between matched objects along a great circle</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="Light_speed" unit="cm/sec">
+<DESCRIPTION>c= 3 * pow(10,10) (Expression: 3 * pow(10,10))</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="Wavelength_1" unit="cm">
+<DESCRIPTION>4.5 * pow(10,-5) (Expression: 4.5 * pow(10,-5))</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="frequency_1" unit="Hz">
+<DESCRIPTION>f= Light_speed/ wavelength (Expression: Light_speed/Wavelength_1)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="Wavelength_2" unit="cm">
+<DESCRIPTION>7.6 * pow(10,-5) (Expression: 7.6 * pow(10,-5))</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="frequency_2" unit="Hz">
+<DESCRIPTION>f= Light_speed/ wavelength (Expression: Light_speed/Wavelength_2)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="Radio_luminosity">
+<DESCRIPTION>1.4GHz (Expression: pow(10, logL21cm))</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="Log_x_to_optical">
+<DESCRIPTION>Expression: light_speed</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="HR_12_FINAL">
+<DESCRIPTION>((cts_210 * 1.00 -   cts_510 * 1.00-  cts_0520 * 1.00)) / ((cts_210 * 1.00 -  cts_510 * 1.00+  cts_0520 * 1.00) ) (Expression: ((cts_210 * 1.00 -   cts_510 * 1.00-  cts_0520 * 1.00)) / ((cts_210 * 1.00 -  cts_510 * 1.00+  cts_0520 * 1.00) ))</DESCRIPTION>
+</FIELD>
+<!-- Dummy VOTable - no DATA element -->
+</TABLE>
+</RESOURCE>
+</VOTABLE>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            XTENSION= 'BINTABLE'           / binary table extension                         BITPIX  =                    8 / 8-bit bytes                                    NAXIS   =                    2 / 2-dimensional table                            NAXIS1  =                 2065 / width of table in bytes                        NAXIS2  =                   15 / number of rows in table                        PCOUNT  =                    0 / size of special data area                      GCOUNT  =                    1 / one data group                                 TFIELDS =                  329 / number of columns                              EXTNAME = 'Joined  '           / table name                                     TTYPE1  = 'ID_1    '           / label for column 1                             TFORM1  = 'E       '           / format for column 1                            TTYPE2  = 'RA_1    '           / label for column 2                             TFORM2  = 'D       '           / format for column 2                            TTYPE3  = 'Dec_1   '           / label for column 3                             TFORM3  = 'D       '           / format for column 3                            TTYPE4  = 'acs_mag '           / label for column 4                             TFORM4  = 'D       '           / format for column 4                            TTYPE5  = 'axial_ratio'        / label for column 5                             TFORM5  = 'D       '           / format for column 5                            TTYPE6  = 'rh      '           / label for column 6                             TFORM6  = 'D       '           / format for column 6                            TTYPE7  = 'rh_kpc  '           / label for column 7                             TFORM7  = 'D       '           / format for column 7                            TTYPE8  = 'log_rh_kpc'         / label for column 8                             TFORM8  = 'D       '           / format for column 8                            TTYPE9  = 'gini    '           / label for column 9                             TFORM9  = 'D       '           / format for column 9                            TTYPE10 = 'conc    '           / label for column 10                            TFORM10 = 'E       '           / format for column 10                           TTYPE11 = 'asym    '           / label for column 11                            TFORM11 = 'D       '           / format for column 11                           TTYPE12 = 'c_int   '           / label for column 12                            TFORM12 = 'E       '           / format for column 12                           TTYPE13 = 'c_linee '           / label for column 13                            TFORM13 = 'E       '           / format for column 13                           TTYPE14 = 'c_svm   '           / label for column 14                            TFORM14 = 'E       '           / format for column 14                           TTYPE15 = 'u_cfht  '           / label for column 15                            TFORM15 = 'D       '           / format for column 15                           TTYPE16 = 'u_cfht_err'         / label for column 16                            TFORM16 = 'D       '           / format for column 16                           TTYPE17 = 'B_subaru'           / label for column 17                            TFORM17 = 'D       '           / format for column 17                           TTYPE18 = 'B_subaru_err'       / label for column 18                            TFORM18 = 'D       '           / format for column 18                           TTYPE19 = 'V_subaru'           / label for column 19                            TFORM19 = 'D       '           / format for column 19                           TTYPE20 = 'V_subaru_err'       / label for column 20                            TFORM20 = 'D       '           / format for column 20                           TTYPE21 = 'g_subaru'           / label for column 21                            TFORM21 = 'D       '           / format for column 21                           TTYPE22 = 'g_subaru_err'       / label for column 22                            TFORM22 = 'E       '           / format for column 22                           TTYPE23 = 'r_subaru'           / label for column 23                            TFORM23 = 'D       '           / format for column 23                           TTYPE24 = 'K_fluxx '           / label for column 24                            TFORM24 = 'D       '           / format for column 24                           TUNIT24 = 'erg/cm/sec^2'       / units for column 24                            TCOMM24 = 'm AB = -2.5 log 10f v - 48.60'                                       TTYPE25 = 'r_subaru_err'       / label for column 25                            TFORM25 = 'D       '           / format for column 25                           TTYPE26 = 'k_corr_optic_val'   / label for column 26                            TFORM26 = 'D       '           / format for column 26                           TTYPE27 = 'optic_val'          / label for column 27                            TFORM27 = 'D       '           / format for column 27                           TTYPE28 = 'optic_val_2'        / label for column 28                            TFORM28 = 'D       '           / format for column 28                           TCOMM28 = 'optic_val / -2.5 (Expression: optic_val / -2.5)'                     TTYPE29 = 'i_subaru'           / label for column 29                            TFORM29 = 'D       '           / format for column 29                           TTYPE30 = 'i_subaru_err'       / label for column 30                            TFORM30 = 'E       '           / format for column 30                           TTYPE31 = 'z_subaru'           / label for column 31                            TFORM31 = 'D       '           / format for column 31                           TTYPE32 = 'z_subaru_err'       / label for column 32                            TFORM32 = 'E       '           / format for column 32                           TTYPE33 = 'K_ctio  '           / label for column 33                            TFORM33 = 'D       '           / format for column 33                           TTYPE34 = 'K_ctio_err'         / label for column 34                            TFORM34 = 'D       '           / format for column 34                           TTYPE35 = 'i_cfht  '           / label for column 35                            TFORM35 = 'D       '           / format for column 35                           TTYPE36 = 'i_cfht_err'         / label for column 36                            TFORM36 = 'D       '           / format for column 36                           TTYPE37 = 'u_sdsst '           / label for column 37                            TFORM37 = 'D       '           / format for column 37                           TTYPE38 = 'u_sdss_err'         / label for column 38                            TFORM38 = 'D       '           / format for column 38                           TTYPE39 = 'g_sdsst '           / label for column 39                            TFORM39 = 'D       '           / format for column 39                           TTYPE40 = 'g_sdss_err'         / label for column 40                            TFORM40 = 'D       '           / format for column 40                           TTYPE41 = 'r_sdsst '           / label for column 41                            TFORM41 = 'D       '           / format for column 41                           TTYPE42 = 'r_sdss_err'         / label for column 42                            TFORM42 = 'D       '           / format for column 42                           TTYPE43 = 'i_sdsst '           / label for column 43                            TFORM43 = 'D       '           / format for column 43                           TTYPE44 = 'i_sdss_err'         / label for column 44                            TFORM44 = 'D       '           / format for column 44                           TTYPE45 = 'z_sdsst '           / label for column 45                            TFORM45 = 'D       '           / format for column 45                           TTYPE46 = 'z_sdss_err'         / label for column 46                            TFORM46 = 'D       '           / format for column 46                           TTYPE47 = 'f814w   '           / label for column 47                            TFORM47 = 'D       '           / format for column 47                           TTYPE48 = 'f814_err'           / label for column 48                            TFORM48 = 'E       '           / format for column 48                           TTYPE49 = 'NB816   '           / label for column 49                            TFORM49 = 'D       '           / format for column 49                           TTYPE50 = 'NB816_err'          / label for column 50                            TFORM50 = 'E       '           / format for column 50                           TTYPE51 = 'Ebv     '           / label for column 51                            TFORM51 = 'D       '           / format for column 51                           TTYPE52 = 'X_catalogue'        / label for column 52                            TFORM52 = '8A      '           / format for column 52                           TTYPE53 = 'cid_x   '           / label for column 53                            TFORM53 = 'E       '           / format for column 53                           TTYPE54 = 'ra_x_1  '           / label for column 54                            TFORM54 = 'D       '           / format for column 54                           TTYPE55 = 'dec_x_1 '           / label for column 55                            TFORM55 = 'D       '           / format for column 55                           TTYPE56 = 'fsoft   '           / label for column 56                            TFORM56 = 'E       '           / format for column 56                           TTYPE57 = 'fhard   '           / label for column 57                            TFORM57 = 'E       '           / format for column 57                           TTYPE58 = 'zphot_salvato'      / label for column 58                            TFORM58 = 'D       '           / format for column 58                           TTYPE59 = 'lum_dist_Mpc'       / label for column 59                            TFORM59 = 'D       '           / format for column 59                           TCOMM59 = 'Expression: luminosityDistance( zphot_salvato, 70, 0.3, 0.7)'        TTYPE60 = 'lum_dist_cm'        / label for column 60                            TFORM60 = 'D       '           / format for column 60                           TUNIT60 = 'cm      '           / units for column 60                            TCOMM60 = 'lum_dist_Mpc * 3.086 * pow(10,24)'                                   TTYPE61 = 'corrK_u_cfht'       / label for column 61                            TFORM61 = 'D       '           / format for column 61                           TTYPE62 = 'corrK_B_subaru'     / label for column 62                            TFORM62 = 'D       '           / format for column 62                           TTYPE63 = 'corrK_V_subaru'     / label for column 63                            TFORM63 = 'D       '           / format for column 63                           TTYPE64 = 'corrK_g_subaru'     / label for column 64                            TFORM64 = 'D       '           / format for column 64                           TTYPE65 = 'corrK_r_subaru'     / label for column 65                            TFORM65 = 'D       '           / format for column 65                           TTYPE66 = 'corrK_i_subaru'     / label for column 66                            TFORM66 = 'D       '           / format for column 66                           TTYPE67 = 'corrK_z_subaru'     / label for column 67                            TFORM67 = 'D       '           / format for column 67                           TTYPE68 = 'corrK_K_ctio'       / label for column 68                            TFORM68 = 'D       '           / format for column 68                           TTYPE69 = 'corrK_f814w'        / label for column 69                            TFORM69 = 'D       '           / format for column 69                           TTYPE70 = 'corrK_nb816'        / label for column 70                            TFORM70 = 'D       '           / format for column 70                           TTYPE71 = 'MagAbs70_u_cfht'    / label for column 71                            TFORM71 = 'D       '           / format for column 71                           TTYPE72 = 'MagAbs70_B_subaru'  / label for column 72                            TFORM72 = 'D       '           / format for column 72                           TTYPE73 = 'B_Z     '           / label for column 73                            TFORM73 = 'D       '           / format for column 73                           TTYPE74 = 'MagAbs70_V_subaru'  / label for column 74                            TFORM74 = 'D       '           / format for column 74                           TTYPE75 = 'MagAbs70_g_subaru'  / label for column 75                            TFORM75 = 'D       '           / format for column 75                           TTYPE76 = 'MagAbs70_r_subaru'  / label for column 76                            TFORM76 = 'D       '           / format for column 76                           TTYPE77 = 'MagAbs70_i_subaru'  / label for column 77                            TFORM77 = 'D       '           / format for column 77                           TTYPE78 = 'MagAbs70_z_subaru'  / label for column 78                            TFORM78 = 'D       '           / format for column 78                           TTYPE79 = 'MagAbs70_K_ctio'    / label for column 79                            TFORM79 = 'D       '           / format for column 79                           TTYPE80 = 'MagAbs70_f814w'     / label for column 80                            TFORM80 = 'D       '           / format for column 80                           TTYPE81 = 'MagAbs70_nb816'     / label for column 81                            TFORM81 = 'D       '           / format for column 81                           TTYPE82 = 'U_B     '           / label for column 82                            TFORM82 = 'D       '           / format for column 82                           TTYPE83 = 'errMagAbs70_u_cfht' / label for column 83                            TFORM83 = 'D       '           / format for column 83                           TTYPE84 = 'errMagAbs70_B_subaru' / label for column 84                          TFORM84 = 'D       '           / format for column 84                           TTYPE85 = 'errMagAbs70_V_subaru' / label for column 85                          TFORM85 = 'E       '           / format for column 85                           TTYPE86 = 'errMagAbs70_g_subaru' / label for column 86                          TFORM86 = 'D       '           / format for column 86                           TTYPE87 = 'errMagAbs70_r_subaru' / label for column 87                          TFORM87 = 'E       '           / format for column 87                           TTYPE88 = 'errMagAbs70_i_subaru' / label for column 88                          TFORM88 = 'E       '           / format for column 88                           TTYPE89 = 'errMagAbs70_z_subaru' / label for column 89                          TFORM89 = 'E       '           / format for column 89                           TTYPE90 = 'errMagAbs70_K_ctio' / label for column 90                            TFORM90 = 'D       '           / format for column 90                           TTYPE91 = 'errMagAbs70_f814w'  / label for column 91                            TFORM91 = 'D       '           / format for column 91                           TTYPE92 = 'errMagAbs70_nb816'  / label for column 92                            TFORM92 = 'E       '           / format for column 92                           TTYPE93 = 'KcorrectedMag_u_cfht' / label for column 93                          TFORM93 = 'D       '           / format for column 93                           TTYPE94 = 'KcorrectedMag_B_subaru' / label for column 94                        TFORM94 = 'D       '           / format for column 94                           TTYPE95 = 'KcorrectedMag_V_subaru' / label for column 95                        TFORM95 = 'D       '           / format for column 95                           TTYPE96 = 'KcorrectedMag_r_subaru' / label for column 96                        TFORM96 = 'D       '           / format for column 96                           TTYPE97 = 'KcorrectedMag_i_subaru' / label for column 97                        TFORM97 = 'D       '           / format for column 97                           TTYPE98 = 'KcorrectedMag_z_subaru' / label for column 98                        TFORM98 = 'D       '           / format for column 98                           TTYPE99 = 'KcorrectedMag_K_ctio' / label for column 99                          TFORM99 = 'D       '           / format for column 99                           TTYPE100= 'KcorrectedMag_f814w' / label for column 100                          TFORM100= 'D       '           / format for column 100                          TTYPE101= 'KcorrectedMag_nb816' / label for column 101                          TFORM101= 'D       '           / format for column 101                          TTYPE102= 'mtol_u_cfht'        / label for column 102                           TFORM102= 'D       '           / format for column 102                          TTYPE103= 'mtol_B_subaru'      / label for column 103                           TFORM103= 'D       '           / format for column 103                          TTYPE104= 'mtol_V_subaru'      / label for column 104                           TFORM104= 'D       '           / format for column 104                          TTYPE105= 'mtol_g_subaru'      / label for column 105                           TFORM105= 'D       '           / format for column 105                          TTYPE106= 'mtol_r_subaru'      / label for column 106                           TFORM106= 'D       '           / format for column 106                          TTYPE107= 'mtol_i_subaru'      / label for column 107                           TFORM107= 'D       '           / format for column 107                          TTYPE108= 'mtol_z_subaru'      / label for column 108                           TFORM108= 'D       '           / format for column 108                          TTYPE109= 'mtol_K_ctio'        / label for column 109                           TFORM109= 'D       '           / format for column 109                          TTYPE110= 'mtol_f814w'         / label for column 110                           TFORM110= 'D       '           / format for column 110                          TTYPE111= 'mtol_nb816'         / label for column 111                           TFORM111= 'D       '           / format for column 111                          TTYPE112= 'mets    '           / label for column 112                           TFORM112= 'D       '           / format for column 112                          TTYPE113= 'b300    '           / label for column 113                           TFORM113= 'D       '           / format for column 113                          TTYPE114= 'b1000   '           / label for column 114                           TFORM114= 'D       '           / format for column 114                          TTYPE115= 'chi2    '           / label for column 115                           TFORM115= 'D       '           / format for column 115                          TTYPE116= 'mass70  '           / label for column 116                           TFORM116= 'D       '           / format for column 116                          TTYPE117= 'intsfh70'           / label for column 117                           TFORM117= 'D       '           / format for column 117                          TTYPE118= 'Fhard_Foptisubaru'  / label for column 118                           TFORM118= 'D       '           / format for column 118                          TTYPE119= 'id_x    '           / label for column 119                           TFORM119= '9A      '           / format for column 119                          TCOMM119= 'String source ID ("cid_" or "lid_"+Source_number)'                   TTYPE120= 'RA_x_2  '           / label for column 120                           TFORM120= 'D       '           / format for column 120                          TCOMM120= 'Chandra Right Ascension (J2000)'                                     TTYPE121= 'DEC_x_2 '           / label for column 121                           TFORM121= 'D       '           / format for column 121                          TCOMM121= 'Chandra Declination (J2000)'                                         TTYPE122= 'pos_err '           / label for column 122                           TFORM122= 'E       '           / format for column 122                          TCOMM122= 'X-ray positional error [arcsec]'                                     TTYPE123= 'DET_ML_F'           / label for column 123                           TFORM123= 'E       '           / format for column 123                          TCOMM123= 'Maximum likelihood detection value in 0.5-7 keV band'                TTYPE124= 'rate_F  '           / label for column 124                           TFORM124= 'E       '           / format for column 124                          TCOMM124= '0.5-7 keV count rate [counts/s]'                                     TTYPE125= 'rate_F_err'         / label for column 125                           TFORM125= 'E       '           / format for column 125                          TCOMM125= '0.5-7 keV count rate error [counts/s]'                               TTYPE126= 'flux_F  '           / label for column 126                           TFORM126= 'E       '           / format for column 126                          TCOMM126= '0.5-10 keV flux [erg/s/cm2]'                                         TTYPE127= 'flux_F_err'         / label for column 127                           TFORM127= 'E       '           / format for column 127                          TCOMM127= '0.5-10 keV flux error [erg/s/cm2]'                                   TTYPE128= 'snr_F   '           / label for column 128                           TFORM128= 'E       '           / format for column 128                          TCOMM128= '0.5-7 keV signal-to-noise ratio'                                     TTYPE129= 'exptime_F'          / label for column 129                           TFORM129= 'E       '           / format for column 129                          TCOMM129= '0.5-7 keV exposure time [ks]'                                        TTYPE130= 'cts_ap_F'           / label for column 130                           TFORM130= 'E       '           / format for column 130                          TCOMM130= '0.5-7 keV aperture photometry counts [counts]'                       TTYPE131= 'cts_ap_F_err'       / label for column 131                           TFORM131= 'E       '           / format for column 131                          TCOMM131= '0.5-7 keV aperture photometry counts error [counts]'                 TTYPE132= 'DET_ML_S'           / label for column 132                           TFORM132= 'E       '           / format for column 132                          TCOMM132= 'Maximum likelihood detection value in 0.5-2 keV band'                TTYPE133= 'rate_S  '           / label for column 133                           TFORM133= 'E       '           / format for column 133                          TCOMM133= '0.5-2 keV count rate [counts/s]'                                     TTYPE134= 'rate_S_err'         / label for column 134                           TFORM134= 'E       '           / format for column 134                          TCOMM134= '0.5-2 keV count rate error [counts/s]'                               TTYPE135= 'flux_S  '           / label for column 135                           TFORM135= 'E       '           / format for column 135                          TCOMM135= '0.5-2 keV flux [erg/s/cm2]'                                          TTYPE136= 'flux_S_err'         / label for column 136                           TFORM136= 'E       '           / format for column 136                          TCOMM136= '0.5-2 keV flux error [erg/s/cm2]'                                    TTYPE137= 'snr_S   '           / label for column 137                           TFORM137= 'E       '           / format for column 137                          TCOMM137= '0.5-2 keV signal-to-noise ratio'                                     TTYPE138= 'exptime_S'          / label for column 138                           TFORM138= 'E       '           / format for column 138                          TCOMM138= '0.5-2 keV exposure time [ks]'                                        TTYPE139= 'cts_ap_S'           / label for column 139                           TFORM139= 'E       '           / format for column 139                          TCOMM139= '0.5-2 keV aperture photometry counts [counts]'                       TTYPE140= 'cts_ap_S_err'       / label for column 140                           TFORM140= 'E       '           / format for column 140                          TCOMM140= '0.5-2 keV aperture photometry counts error [counts]'                 TTYPE141= 'DET_ML_H'           / label for column 141                           TFORM141= 'E       '           / format for column 141                          TCOMM141= 'Maximum likelihood detection value in 2-7 keV band'                  TTYPE142= 'rate_H  '           / label for column 142                           TFORM142= 'E       '           / format for column 142                          TCOMM142= '2-7 keV count rate [counts/s]'                                       TTYPE143= 'rate_H_err'         / label for column 143                           TFORM143= 'E       '           / format for column 143                          TCOMM143= '2-7 keV count rate error [counts/s]'                                 TTYPE144= 'flux_H  '           / label for column 144                           TFORM144= 'E       '           / format for column 144                          TCOMM144= '2-10 keV flux [erg/s/cm2]'                                           TTYPE145= 'flux_H_err'         / label for column 145                           TFORM145= 'E       '           / format for column 145                          TCOMM145= '2-10 keV flux error [erg/s/cm2]'                                     TTYPE146= 'snr_H   '           / label for column 146                           TFORM146= 'E       '           / format for column 146                          TCOMM146= '2-7 keV signal-to-noise ratio'                                       TTYPE147= 'exptime_H'          / label for column 147                           TFORM147= 'E       '           / format for column 147                          TCOMM147= '2-7 keV exposure time [ks]'                                          TTYPE148= 'cts_ap_H'           / label for column 148                           TFORM148= 'E       '           / format for column 148                          TCOMM148= '2-7 keV aperture photometry counts [counts]'                         TTYPE149= 'cts_ap_H_err'       / label for column 149                           TFORM149= 'E       '           / format for column 149                          TCOMM149= '2-7 keV aperture photometry counts error [counts]'                   TTYPE150= 'HR      '           / label for column 150                           TFORM150= 'E       '           / format for column 150                          TCOMM150= 'Hardness Ratio, (H-S)/(H+S)'                                         TTYPE151= 'HR_lo_lim'          / label for column 151                           TFORM151= 'E       '           / format for column 151                          TCOMM151= 'Hardness Ratio 90% lower limit'                                      TTYPE152= 'HR_up_lim'          / label for column 152                           TFORM152= 'E       '           / format for column 152                          TCOMM152= 'Hardness Ratio 90% upper limit'                                      TTYPE153= 'kflux_s '           / label for column 153                           TFORM153= 'D       '           / format for column 153                          TUNIT153= 'erg/sec/cm^2'       / units for column 153                           TCOMM153= 'kcorrectedflux_s =  pow (1 + zphot_salvato, 1.9-2 )* flux_S'         TTYPE154= 'kflux_h '           / label for column 154                           TFORM154= 'D       '           / format for column 154                          TUNIT154= 'erg/sec/cm^2'       / units for column 154                           TCOMM154= 'kcorrectedflux_h =  pow (1 + zphot_salvato, 1.9-2 )* flux_H'         TTYPE155= 'kflux_f '           / label for column 155                           TFORM155= 'D       '           / format for column 155                          TUNIT155= 'erg/sec/cm^2'       / units for column 155                           TCOMM155= 'kcorrected flux_F =  pow (1 + zphot_salvato, 1.9-2 )* flux_F'        TTYPE156= 'kcorrected_luminocity_flux_s' / label for column 156                 TFORM156= 'D       '           / format for column 156                          TUNIT156= 'erg/sec '           / units for column 156                           TCOMM156= 'Kcorrecte Luminocity = 4* PI * pow ( lum_dist_cm, 2)* Kflux_s'       TTYPE157= 'kcorrected_luminocity_flux_H' / label for column 157                 TFORM157= 'D       '           / format for column 157                          TUNIT157= 'erg/sec '           / units for column 157                           TCOMM157= 'Kcorrecte Luminocity = 4* PI * pow ( lum_dist_cm, 2)* Kflux_h'       TTYPE158= 'log(kcorrected_luminocity_flux_H)' / label for column 158            TFORM158= 'D       '           / format for column 158                          TCOMM158= 'Expression: log10(kcorrected_luminocity_flux_H)'                     TTYPE159= 'kcorrected_luminocity_flux_f' / label for column 159                 TFORM159= 'D       '           / format for column 159                          TUNIT159= 'erg/sec '           / units for column 159                           TCOMM159= 'Kcorrecte Luminocity = 4* PI * pow ( lum_dist_cm, 2)* Kflux_f'       TTYPE160= 'Separation_1'       / label for column 160                           TFORM160= 'D       '           / format for column 160                          TUNIT160= 'arcsec  '           / units for column 160                           TCOMM160= 'Distance between matched objects along a great circle'               TUCD160 = 'pos.angDistance'                                                     TTYPE161= 'HR_ratio_Chandra'   / label for column 161                           TFORM161= 'D       '           / format for column 161                          TUNIT161= 'erg/sec/cm^2'       / units for column 161                           TCOMM161= 'kflux_h/ kflux_s (Expression: kflux_h/ kflux_s)'                     TTYPE162= 'xid     '           / label for column 162                           TFORM162= 'J       '           / format for column 162                          TNULL162=          -2147483648 / blank value for column 162                     TTYPE163= 'iau_name'           / label for column 163                           TFORM163= '21A     '           / format for column 163                          TTYPE164= 'ra_2    '           / label for column 164                           TFORM164= 'D       '           / format for column 164                          TTYPE165= 'dec_2   '           / label for column 165                           TFORM165= 'D       '           / format for column 165                          TTYPE166= 'poserr  '           / label for column 166                           TFORM166= 'E       '           / format for column 166                          TTYPE167= 's0520   '           / label for column 167                           TFORM167= 'E       '           / format for column 167                          TTYPE168= 's_err0520'          / label for column 168                           TFORM168= 'E       '           / format for column 168                          TTYPE169= 'soft_band_err'      / label for column 169                           TFORM169= 'E       '           / format for column 169                          TCOMM169= 's_err0520 / s0520 * 100 (Expression: s_err0520 / s0520 * 100)'       TTYPE170= 'cts_0520'           / label for column 170                           TFORM170= 'I       '           / format for column 170                          TNULL170=               -32768 / blank value for column 170                     TTYPE171= 'cts_err_0520'       / label for column 171                           TFORM171= 'I       '           / format for column 171                          TNULL171=               -32768 / blank value for column 171                     TTYPE172= 'L_0520  '           / label for column 172                           TFORM172= 'D       '           / format for column 172                          TTYPE173= 'bkg_cts_0520'       / label for column 173                           TFORM173= 'E       '           / format for column 173                          TTYPE174= 'exptime_0520'       / label for column 174                           TFORM174= 'E       '           / format for column 174                          TTYPE175= 's210    '           / label for column 175                           TFORM175= 'E       '           / format for column 175                          TTYPE176= 's_err210'           / label for column 176                           TFORM176= 'E       '           / format for column 176                          TTYPE177= 'cts_210 '           / label for column 177                           TFORM177= 'I       '           / format for column 177                          TNULL177=               -32768 / blank value for column 177                     TTYPE178= 'full_band_err'      / label for column 178                           TFORM178= 'E       '           / format for column 178                          TCOMM178= 's_err210 / s210 * 100 (Expression: s_err210 / s210 * 100)'           TTYPE179= 'cts_err_210'        / label for column 179                           TFORM179= 'I       '           / format for column 179                          TNULL179=               -32768 / blank value for column 179                     TTYPE180= 'L_210   '           / label for column 180                           TFORM180= 'E       '           / format for column 180                          TTYPE181= 'bkg_cts_210'        / label for column 181                           TFORM181= 'E       '           / format for column 181                          TTYPE182= 'exptime_210'        / label for column 182                           TFORM182= 'E       '           / format for column 182                          TTYPE183= 's510    '           / label for column 183                           TFORM183= 'E       '           / format for column 183                          TTYPE184= 's_err510'           / label for column 184                           TFORM184= 'E       '           / format for column 184                          TTYPE185= 'hard_band_err'      / label for column 185                           TFORM185= 'E       '           / format for column 185                          TCOMM185= 's_err510 / s510 * 100 (Expression: s_err510 / s510 * 100)'           TTYPE186= 'cts_510 '           / label for column 186                           TFORM186= 'I       '           / format for column 186                          TNULL186=               -32768 / blank value for column 186                     TTYPE187= 'cts_err_510'        / label for column 187                           TFORM187= 'I       '           / format for column 187                          TNULL187=               -32768 / blank value for column 187                     TTYPE188= 'L_510   '           / label for column 188                           TFORM188= 'E       '           / format for column 188                          TTYPE189= 'bkg_cts_510'        / label for column 189                           TFORM189= 'E       '           / format for column 189                          TTYPE190= 'exptime_510'        / label for column 190                           TFORM190= 'E       '           / format for column 190                          TTYPE191= 'Kc_1    '           / label for column 191                           TFORM191= 'D       '           / format for column 191                          TUNIT191= 'erg/sec/cm^2'       / units for column 191                           TCOMM191= 'K-correcte(0520)=  pow (1 + zphot_salvato, 1.9-2 )* o520 * 10e-14'   TTYPE192= 'kc_2    '           / label for column 192                           TFORM192= 'D       '           / format for column 192                          TUNIT192= 'erg/sec/cm^2'       / units for column 192                           TTYPE193= 'kc_3    '           / label for column 193                           TFORM193= 'D       '           / format for column 193                          TUNIT193= 'erg/sec/cm^2'       / units for column 193                           TTYPE194= 'Kcorrected_lum_0520' / label for column 194                          TFORM194= 'D       '           / format for column 194                          TUNIT194= 'erg/cm  '           / units for column 194                           TCOMM194= 'Kcorrecte Luminocity = 4* PI * pow ( lum_dist_cm, 2)* Kc_1'          TTYPE195= 'Kcorrected_lum_510' / label for column 195                           TFORM195= 'D       '           / format for column 195                          TUNIT195= 'erg/sec '           / units for column 195                           TTYPE196= 'Kcorrected_lum_210' / label for column 196                           TFORM196= 'D       '           / format for column 196                          TUNIT196= 'erg/sec '           / units for column 196                           TTYPE197= 'log10(Kcorrected_lum_210)' / label for column 197                    TFORM197= 'D       '           / format for column 197                          TCOMM197= 'Expression: log10(Kcorrected_lum_210)'                               TTYPE198= 'kflux_1 '           / label for column 198                           TFORM198= 'D       '           / format for column 198                          TCOMM198= 'kc_1 +kc_3 - kc_2 (Expression: kc_1 +kc_3 - kc_2)'                   TTYPE199= 'Xray_to_optical'    / label for column 199                           TFORM199= 'D       '           / format for column 199                          TCOMM199= 'kflux_1/ k_corr_optic_val (Expression: kflux_1/ k_corr_optic_val)'   TTYPE200= 'Log(X/0)'           / label for column 200                           TFORM200= 'D       '           / format for column 200                          TCOMM200= 'log 10(Xray_to_optical) (Expression: log10(Xray_to_optical))'        TTYPE201= 'HR_1    '           / label for column 201                           TFORM201= 'D       '           / format for column 201                          TUNIT201= 'erg/sec/cm^2'       / units for column 201                           TCOMM201= '(kc_2-kc_3) / kc_1 (Expression: (kc_3) / kc_1)'                      TTYPE202= 'HR_ratio'           / label for column 202                           TFORM202= 'D       '           / format for column 202                          TUNIT202= 'erg/sec/cm^2'       / units for column 202                           TCOMM202= 'kc_3 / kc_1 (Expression: kc_3 / kc_1)'                               TTYPE203= 'HR_no_kcorr_1'      / label for column 203                           TFORM203= 'E       '           / format for column 203                          TCOMM203= '(s210-s510) / s0520 (Expression: (s210-s510) / s0520)'               TTYPE204= 'HR_no_kcorr_2'      / label for column 204                           TFORM204= 'E       '           / format for column 204                          TCOMM204= 's210 / s0520 (Expression: s210 / s0520)'                             TTYPE205= 'Separation_1a'      / label for column 205                           TFORM205= 'D       '           / format for column 205                          TUNIT205= 'arcsec  '           / units for column 205                           TCOMM205= 'Distance between matched objects along a great circle'               TUCD205 = 'pos.angDistance'                                                     TTYPE206= '_RAJ2000_1'         / label for column 206                           TFORM206= '16A     '           / format for column 206                          TUNIT206= 'deg     '           / units for column 206                           TCOMM206= 'From here Verdaulaki2021 Table 1'                                    TTYPE207= '_DEJ2000_1'         / label for column 207                           TFORM207= '16A     '           / format for column 207                          TUNIT207= 'deg     '           / units for column 207                           TTYPE208= 'All_1   '           / label for column 208                           TFORM208= '3A      '           / format for column 208                          TTYPE209= 'ID_2a   '           / label for column 209                           TFORM209= 'J       '           / format for column 209                          TNULL209=          -2147483648 / blank value for column 209                     TTYPE210= 'DL      '           / label for column 210                           TFORM210= 'E       '           / format for column 210                          TUNIT210= 'arcsec  '           / units for column 210                           TTYPE211= 'DS      '           / label for column 211                           TFORM211= 'E       '           / format for column 211                          TUNIT211= 'arcsec  '           / units for column 211                           TTYPE212= 'DLhs    '           / label for column 212                           TFORM212= 'E       '           / format for column 212                          TUNIT212= 'arcsec  '           / units for column 212                           TTYPE213= 'DShs    '           / label for column 213                           TFORM213= 'E       '           / format for column 213                          TUNIT213= 'arcsec  '           / units for column 213                           TTYPE214= 'BA      '           / label for column 214                           TFORM214= 'J       '           / format for column 214                          TUNIT214= 'deg     '           / units for column 214                           TNULL214=          -2147483648 / blank value for column 214                     TTYPE215= 'FR      '           / label for column 215                           TFORM215= '8A      '           / format for column 215                          TTYPE216= 'u_FR    '           / label for column 216                           TFORM216= 'A       '           / format for column 216                          TTYPE217= 'n_FR    '           / label for column 217                           TFORM217= '2A      '           / format for column 217                          TTYPE218= '_RA_1   '           / label for column 218                           TFORM218= 'E       '           / format for column 218                          TUNIT218= 'deg     '           / units for column 218                           TTYPE219= '_DE_1   '           / label for column 219                           TFORM219= 'E       '           / format for column 219                          TUNIT219= 'deg     '           / units for column 219                           TTYPE220= 'Separation_1c'      / label for column 220                           TFORM220= 'D       '           / format for column 220                          TUNIT220= 'arcsec  '           / units for column 220                           TCOMM220= 'Distance between matched objects along a great circle'               TUCD220 = 'pos.angDistance'                                                     TTYPE221= '_RAJ2000_2'         / label for column 221                           TFORM221= '12A     '           / format for column 221                          TUNIT221= 'deg     '           / units for column 221                           TCOMM221= 'From here Verdaulaki2021 Table 1_part2'                              TTYPE222= '_DEJ2000_2'         / label for column 222                           TFORM222= '12A     '           / format for column 222                          TUNIT222= 'deg     '           / units for column 222                           TTYPE223= 'All_2   '           / label for column 223                           TFORM223= '3A      '           / format for column 223                          TTYPE224= 'ID_1a   '           / label for column 224                           TFORM224= 'J       '           / format for column 224                          TNULL224=          -2147483648 / blank value for column 224                     TTYPE225= 'COSMOSVLA3'         / label for column 225                           TFORM225= '19A     '           / format for column 225                          TTYPE226= 'RAJ2000_1'          / label for column 226                           TFORM226= 'E       '           / format for column 226                          TUNIT226= 'deg     '           / units for column 226                           TTYPE227= 'DEJ2000_1'          / label for column 227                           TFORM227= 'E       '           / format for column 227                          TUNIT227= 'deg     '           / units for column 227                           TTYPE228= 'S3GHz   '           / label for column 228                           TFORM228= 'E       '           / format for column 228                          TUNIT228= 'mJy     '           / units for column 228                           TTYPE229= 'e_S3GHz '           / label for column 229                           TFORM229= 'E       '           / format for column 229                          TUNIT229= 'mJy     '           / units for column 229                           TTYPE230= 'z       '           / label for column 230                           TFORM230= 'E       '           / format for column 230                          TTYPE231= 'n_z     '           / label for column 231                           TFORM231= 'A       '           / format for column 231                          TTYPE232= 'Class3GHz'          / label for column 232                           TFORM232= '8A      '           / format for column 232                          TTYPE233= 'u_Class3GHz'        / label for column 233                           TFORM233= 'A       '           / format for column 233                          TTYPE234= 'Class1_4GHz'        / label for column 234                           TFORM234= '4A      '           / format for column 234                          TTYPE235= 'radioexcess'        / label for column 235                           TFORM235= 'A       '           / format for column 235                          TTYPE236= 'XrayGroup'          / label for column 236                           TFORM236= 'J       '           / format for column 236                          TNULL236=          -2147483648 / blank value for column 236                     TTYPE237= 'LAS     '           / label for column 237                           TFORM237= 'E       '           / format for column 237                          TUNIT237= 'arcsec  '           / units for column 237                           TTYPE238= 'D_1     '           / label for column 238                           TFORM238= 'E       '           / format for column 238                          TUNIT238= 'kpc     '           / units for column 238                           TTYPE239= 'COSMOSVLADP_1'      / label for column 239                           TFORM239= '14A     '           / format for column 239                          TTYPE240= 'n_COSMOSVLADP'      / label for column 240                           TFORM240= 'A       '           / format for column 240                          TTYPE241= 'All     '           / label for column 241                           TFORM241= '3A      '           / format for column 241                          TTYPE242= 'ID_2b   '           / label for column 242                           TFORM242= 'J       '           / format for column 242                          TNULL242=          -2147483648 / blank value for column 242                     TCOMM242= 'From here Verdaulaki 2021 table 2'                                   TTYPE243= 'SFR_IR_UV_'         / label for column 243                           TFORM243= 'E       '           / format for column 243                          TUNIT243= 'solMass/yr'         / units for column 243                           TTYPE244= 'logM_   '           / label for column 244                           TFORM244= 'E       '           / format for column 244                          TUNIT244= 'log(solMass)'       / units for column 244                           TTYPE245= 'SEDAGN_1'           / label for column 245                           TFORM245= 'A       '           / format for column 245                          TTYPE246= 'CtpID   '           / label for column 246                           TFORM246= 'J       '           / format for column 246                          TNULL246=          -2147483648 / blank value for column 246                     TTYPE247= 'n_CtpID '           / label for column 247                           TFORM247= '3A      '           / format for column 247                          TTYPE248= 'OClass  '           / label for column 248                           TFORM248= '3A      '           / format for column 248                          TTYPE249= '_RAJ2000_1a'        / label for column 249                           TFORM249= '16A     '           / format for column 249                          TUNIT249= 'deg     '           / units for column 249                           TCOMM249= 'From here Verdaulaki 2021 table 3'                                   TTYPE250= '_DEJ2000_1a'        / label for column 250                           TFORM250= '16A     '           / format for column 250                          TUNIT250= 'deg     '           / units for column 250                           TTYPE251= 'ID_1b   '           / label for column 251                           TFORM251= 'J       '           / format for column 251                          TNULL251=          -2147483648 / blank value for column 251                     TTYPE252= 'RadioClass'         / label for column 252                           TFORM252= '8A      '           / format for column 252                          TTYPE253= 'lambdar '           / label for column 253                           TFORM253= 'E       '           / format for column 253                          TTYPE254= 'lambdark'           / label for column 254                           TFORM254= 'E       '           / format for column 254                          TTYPE255= 'logLjet '           / label for column 255                           TFORM255= 'E       '           / format for column 255                          TUNIT255= 'log(1e-07W)'        / units for column 255                           TTYPE256= 'LX_Lradio'          / label for column 256                           TFORM256= 'E       '           / format for column 256                          TTYPE257= 'logMBH  '           / label for column 257                           TFORM257= 'E       '           / format for column 257                          TUNIT257= 'log(solMass)'       / units for column 257                           TTYPE258= '_RA_2   '           / label for column 258                           TFORM258= 'E       '           / format for column 258                          TUNIT258= 'deg     '           / units for column 258                           TTYPE259= '_DE_2   '           / label for column 259                           TFORM259= 'E       '           / format for column 259                          TUNIT259= 'deg     '           / units for column 259                           TTYPE260= 'Separation_1d'      / label for column 260                           TFORM260= 'D       '           / format for column 260                          TUNIT260= 'arcsec  '           / units for column 260                           TCOMM260= 'Distance between matched objects along a great circle'               TUCD260 = 'pos.angDistance'                                                     TTYPE261= '_RAJ2000_2a'        / label for column 261                           TFORM261= '16A     '           / format for column 261                          TUNIT261= 'deg     '           / units for column 261                           TCOMM261= 'From here Verdaulaki2021 Table 4'                                    TTYPE262= '_DEJ2000_2a'        / label for column 262                           TFORM262= '16A     '           / format for column 262                          TUNIT262= 'deg     '           / units for column 262                           TTYPE263= 'ID_2c   '           / label for column 263                           TFORM263= 'J       '           / format for column 263                          TNULL263=          -2147483648 / blank value for column 263                     TTYPE264= 'D_2     '           / label for column 264                           TFORM264= 'E       '           / format for column 264                          TUNIT264= 'kpc     '           / units for column 264                           TTYPE265= '_RA     '           / label for column 265                           TFORM265= 'E       '           / format for column 265                          TUNIT265= 'deg     '           / units for column 265                           TTYPE266= '_DE     '           / label for column 266                           TFORM266= 'E       '           / format for column 266                          TUNIT266= 'deg     '           / units for column 266                           TTYPE267= 'Separation_1e'      / label for column 267                           TFORM267= 'D       '           / format for column 267                          TUNIT267= 'arcsec  '           / units for column 267                           TCOMM267= 'Distance between matched objects along a great circle'               TUCD267 = 'pos.angDistance'                                                     TTYPE268= '_RAJ2000_1b'        / label for column 268                           TFORM268= '14A     '           / format for column 268                          TUNIT268= 'deg     '           / units for column 268                           TCOMM268= 'From here Smolcic 2017 3GHz catalogue'                               TTYPE269= '_DEJ2000_1b'        / label for column 269                           TFORM269= '14A     '           / format for column 269                          TUNIT269= 'deg     '           / units for column 269                           TTYPE270= 'VLA     '           / label for column 270                           TFORM270= 'J       '           / format for column 270                          TNULL270=          -2147483648 / blank value for column 270                     TTYPE271= 'RAJ2000_2'          / label for column 271                           TFORM271= 'E       '           / format for column 271                          TUNIT271= 'deg     '           / units for column 271                           TTYPE272= 'DEJ2000_2'          / label for column 272                           TFORM272= 'E       '           / format for column 272                          TUNIT272= 'deg     '           / units for column 272                           TTYPE273= 'Multi   '           / label for column 273                           TFORM273= 'J       '           / format for column 273                          TNULL273=          -2147483648 / blank value for column 273                     TTYPE274= 'CatCtp  '           / label for column 274                           TFORM274= '10A     '           / format for column 274                          TTYPE275= 'Ctp     '           / label for column 275                           TFORM275= 'J       '           / format for column 275                          TNULL275=          -2147483648 / blank value for column 275                     TTYPE276= 'RAcdeg  '           / label for column 276                           TFORM276= 'E       '           / format for column 276                          TUNIT276= 'deg     '           / units for column 276                           TTYPE277= 'DEcdeg  '           / label for column 277                           TFORM277= 'E       '           / format for column 277                          TUNIT277= 'deg     '           / units for column 277                           TTYPE278= 'Sep     '           / label for column 278                           TFORM278= 'E       '           / format for column 278                          TUNIT278= 'arcsec  '           / units for column 278                           TTYPE279= 'Pfalse  '           / label for column 279                           TFORM279= 'E       '           / format for column 279                          TTYPE280= 'zbest   '           / label for column 280                           TFORM280= 'E       '           / format for column 280                          TTYPE281= 'F3GHz   '           / label for column 281                           TFORM281= 'E       '           / format for column 281                          TUNIT281= 'uJy     '           / units for column 281                           TTYPE282= 'logL10cm'           / label for column 282                           TFORM282= 'E       '           / format for column 282                          TUNIT282= 'log(W/Hz)'          / units for column 282                           TTYPE283= 'logL21cm'           / label for column 283                           TFORM283= 'E       '           / format for column 283                          TUNIT283= 'log(W/Hz)'          / units for column 283                           TTYPE284= 'logLTIRSF'          / label for column 284                           TFORM284= 'E       '           / format for column 284                          TUNIT284= 'log(solLum)'        / units for column 284                           TTYPE285= 'SFR     '           / label for column 285                           TFORM285= 'D       '           / format for column 285                          TUNIT285= 'solMass/yr'         / units for column 285                           TTYPE286= 'XrayAGN '           / label for column 286                           TFORM286= 'A       '           / format for column 286                          TTYPE287= 'MIRAGN  '           / label for column 287                           TFORM287= 'A       '           / format for column 287                          TTYPE288= 'SEDAGN_2'           / label for column 288                           TFORM288= 'A       '           / format for column 288                          TTYPE289= 'QMLAGN  '           / label for column 289                           TFORM289= 'A       '           / format for column 289                          TTYPE290= 'SFG     '           / label for column 290                           TFORM290= 'A       '           / format for column 290                          TTYPE291= 'CleanSFG'           / label for column 291                           TFORM291= 'A       '           / format for column 291                          TTYPE292= 'HLAGN   '           / label for column 292                           TFORM292= 'A       '           / format for column 292                          TTYPE293= 'MLAGN   '           / label for column 293                           TFORM293= 'A       '           / format for column 293                          TTYPE294= 'RExcess '           / label for column 294                           TFORM294= 'A       '           / format for column 294                          TTYPE295= 'flagC15 '           / label for column 295                           TFORM295= 'J       '           / format for column 295                          TNULL295=          -2147483648 / blank value for column 295                     TTYPE296= 'Separation_1f'      / label for column 296                           TFORM296= 'D       '           / format for column 296                          TUNIT296= 'arcsec  '           / units for column 296                           TCOMM296= 'Distance between matched objects along a great circle'               TUCD296 = 'pos.angDistance'                                                     TTYPE297= '_RAJ2000_2b'        / label for column 297                           TFORM297= '14A     '           / format for column 297                          TUNIT297= 'deg     '           / units for column 297                           TTYPE298= '_DEJ2000_2b'        / label for column 298                           TFORM298= '14A     '           / format for column 298                          TUNIT298= 'deg     '           / units for column 298                           TTYPE299= 'COSMOSVLADP_2'      / label for column 299                           TFORM299= '19A     '           / format for column 299                          TTYPE300= 'COSMOSVLA'          / label for column 300                           TFORM300= '19A     '           / format for column 300                          TTYPE301= 'e_RAJ2000'          / label for column 301                           TFORM301= 'E       '           / format for column 301                          TUNIT301= 'arcsec  '           / units for column 301                           TTYPE302= 'e_DEJ2000'          / label for column 302                           TFORM302= 'E       '           / format for column 302                          TUNIT302= 'arcsec  '           / units for column 302                           TTYPE303= 'Sp_1_4_ '           / label for column 303                           TFORM303= 'E       '           / format for column 303                          TUNIT303= 'mJy     '           / units for column 303                           TTYPE304= 'e_Sp_1_4_'          / label for column 304                           TFORM304= 'E       '           / format for column 304                          TUNIT304= 'mJy     '           / units for column 304                           TTYPE305= 'Sp_1_4_c'           / label for column 305                           TFORM305= 'E       '           / format for column 305                          TUNIT305= 'mJy     '           / units for column 305                           TTYPE306= 'Si_1_4_ '           / label for column 306                           TFORM306= 'E       '           / format for column 306                          TUNIT306= 'mJy     '           / units for column 306                           TTYPE307= 'e_Si_1_4_'          / label for column 307                           TFORM307= 'E       '           / format for column 307                          TUNIT307= 'mJy     '           / units for column 307                           TTYPE308= 'rmsbg   '           / label for column 308                           TFORM308= 'E       '           / format for column 308                          TUNIT308= 'mJy     '           / units for column 308                           TTYPE309= 'Bmaj    '           / label for column 309                           TFORM309= 'E       '           / format for column 309                          TUNIT309= 'arcsec  '           / units for column 309                           TTYPE310= 'Bmin    '           / label for column 310                           TFORM310= 'E       '           / format for column 310                          TUNIT310= 'arcsec  '           / units for column 310                           TTYPE311= 'PA      '           / label for column 311                           TFORM311= 'E       '           / format for column 311                          TUNIT311= 'deg     '           / units for column 311                           TTYPE312= 'R       '           / label for column 312                           TFORM312= 'J       '           / format for column 312                          TNULL312=          -2147483648 / blank value for column 312                     TTYPE313= 'M       '           / label for column 313                           TFORM313= 'J       '           / format for column 313                          TNULL313=          -2147483648 / blank value for column 313                     TTYPE314= 'Cat     '           / label for column 314                           TFORM314= 'J       '           / format for column 314                          TNULL314=          -2147483648 / blank value for column 314                     TTYPE315= 'Det     '           / label for column 315                           TFORM315= 'J       '           / format for column 315                          TNULL315=          -2147483648 / blank value for column 315                     TTYPE316= 'Simbad  '           / label for column 316                           TFORM316= '6A      '           / format for column 316                          TTYPE317= 'RAJ2000 '           / label for column 317                           TFORM317= '12A     '           / format for column 317                          TUNIT317= 'h:m:s   '           / units for column 317                           TTYPE318= 'DEJ2000 '           / label for column 318                           TFORM318= '12A     '           / format for column 318                          TUNIT318= 'd:m:s   '           / units for column 318                           TTYPE319= 'RA2000  '           / label for column 319                           TFORM319= 'D       '           / format for column 319                          TUNIT319= 'degrees '           / units for column 319                           TCOMM319= 'FK5 J2000.0 Right Ascension'                                         TTYPE320= 'DEC2000 '           / label for column 320                           TFORM320= 'D       '           / format for column 320                          TUNIT320= 'degrees '           / units for column 320                           TCOMM320= 'FK5 J2000.0 Declination'                                             TTYPE321= 'Separation'         / label for column 321                           TFORM321= 'D       '           / format for column 321                          TUNIT321= 'arcsec  '           / units for column 321                           TCOMM321= 'Distance between matched objects along a great circle'               TUCD321 = 'pos.angDistance'                                                     TTYPE322= 'Light_speed'        / label for column 322                           TFORM322= 'D       '           / format for column 322                          TUNIT322= 'cm/sec  '           / units for column 322                           TCOMM322= 'c= 3 * pow(10,10) (Expression: 3 * pow(10,10))'                      TTYPE323= 'Wavelength_1'       / label for column 323                           TFORM323= 'D       '           / format for column 323                          TUNIT323= 'cm      '           / units for column 323                           TCOMM323= '4.5 * pow(10,-5) (Expression: 4.5 * pow(10,-5))'                     TTYPE324= 'frequency_1'        / label for column 324                           TFORM324= 'D       '           / format for column 324                          TUNIT324= 'Hz      '           / units for column 324                           TCOMM324= 'f= Light_speed/ wavelength (Expression: Light_speed/Wavelength_1)'   TTYPE325= 'Wavelength_2'       / label for column 325                           TFORM325= 'D       '           / format for column 325                          TUNIT325= 'cm      '           / units for column 325                           TCOMM325= '7.6 * pow(10,-5) (Expression: 7.6 * pow(10,-5))'                     TTYPE326= 'frequency_2'        / label for column 326                           TFORM326= 'D       '           / format for column 326                          TUNIT326= 'Hz      '           / units for column 326                           TCOMM326= 'f= Light_speed/ wavelength (Expression: Light_speed/Wavelength_2)'   TTYPE327= 'Radio_luminosity'   / label for column 327                           TFORM327= 'D       '           / format for column 327                          TCOMM327= '1.4GHz (Expression: pow(10, logL21cm))'                              TTYPE328= 'Log_x_to_optical'   / label for column 328                           TFORM328= 'D       '           / format for column 328                          TCOMM328= 'Expression: light_speed'                                             TTYPE329= 'HR_12_FINAL'        / label for column 329                           TFORM329= 'D       '           / format for column 329                          DATE-HDU= '2023-02-06T11:49:52' / Date of HDU creation (UTC)                    STILVERS= '3.2.2-debian'       / Version of STIL software                       STILCLAS= 'uk.ac.starlink.votable.FitsPlusTableWriter' / Author class in STIL soEND                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ∆Óx @b∂D˜1$@µ‘ÏV@4èG¸?ﬂ·é˚∞ÂÊ@.d˛†Ño@ßX”E»?ﬁ´jÄèÊ?Âü”o~=?˛]?º˚¸e@Ãy?Ä  ?Ä  @   @8§Äf¬≠?¨‡uˆ˝!ˇ@7ê∞ˇÁ¨L?¢àŒp:˚@6± ¿Éo?î…ÖoiD@7ày?Ü˛å<¸PH@5Ê¿%ËAh'l8Mí?åwökP∞Ú<˛ÈËìÃVì@R∑ëÍy¿<◊ã=∂Cı@5Lˇçy<_@4á_ò;ˇó$@2´"ﬂ˛ÿπ?ñlÙ!-w@5tø≈}M?ïÈ·∞â†'@8ô=‡5_]?ËwökP∞Ú@7qèø¸Ú?¬åLò_@6Z Ñ?™QŒ_p@50∑Ä4m∆?•‹∆?@4ÄÀM£!?ºÙ!-w2@4Â„_∂H˝=Á@4˜‹ Fv›<u?î”|v’ICivano12C÷  @b∂D(M¸„@ßæä‡(b˚>)†\?›/üæv…@£“ÆZ1ÚäEπMO¬¢?¯tÇà‹?˙/z¨nàt?ı‹Y1 }?˙,iñê?Ó≠ _?Á-rˇ—›?‚gSñÄ	¶ø ˘‰]Jë?ÂÖ˚¯3Ç‰?ÂáYôœI¿2·ƒˇxÒÉ¿4Ê`…ä?ˇù«¸És¿¿4•“øU¿4Ÿ?°÷¿5=?¸oR¿5™$ô˘;¿6¬ﬂ‰ ∆¿7$â •ëı¿5ÀÏ?X€c¿5∫@&`Ω?Ûb
+-Äp?¨‡uˆ˝!ˇ?¢àŒp:˚<¶L0?üä	ﬁ “<cº”<_;ˇó$?ñlÙ!-w?°ú‡uˆ˝"<u@8Äc?jy@7√—†q$0@6∑—‡2_@7ÅBÄÆI@5o h€å@4åG oëà@2ß]†≈@4›¢wè@4Íœ`%∆@é”ze˜¨@˜ëYY7™@±Qa£ @syÅÃz?˝¨`E∫ı4?ÙZs?Î∑∫Åp≠Ë?∆ù£ïﬁ˙?Ò˙/¡é´)?Òƒp›∏≠[?® 4RÌ„û?o‹©π¢Mù?„Ö	üªÛ@W†     @%	‘A5Tv@%ë∏>†N¿?ˆ¬{Ô∂H∆cid_428  @b∂Dj∫L‹@˜¡∂>Ñõ¶Dp∞ ;2ÈÕ9é )G"'Œ_A°ÖCkÖCØhˆA¬·HC¸Ô\:∑Ä48»|()É˜&8¡sAiÎÖCû∏Cı√AÑ=qCÎ:·:ƒõ¶8…Sú)M–Ñ'S ˆAz{CáÆC@EAë∏=£◊
+<£◊
+>\)=h{Z,"=(«8êãA='˜÷›óH‘
+0ÿœH¯TºA"d˘@E√‚–TŒ∞H˜àJÇ £?›l¥æ~u @m¡Dp‹   xXMMU_J095847.0+021552@b∂DäﬁÎ≥@º©iv?îz·?ÅGÆ=u¬è@æY∑ @z≈p£◊
+=?◊
+=B'∏@ñff>—ÎÖöAì Cï¥{@"è\B)ôö?ÃÃÕ>≥33AØ   B A?\)?ÒÎÖB	ÎÖ=Áí“JŸ/=E∞ô≥ò%=_⁄ì‹ÂH’Ç]ÇXÿH·	z@ìÕ5H˘Îwé G@E≈q˚#S‹=&HªÛ¯ä(@2:±‘L?ËYì/!C@ç≤%±â?˘X∂â®S@DoÜ@îÈ0?¨êiÔöπÒ                                   Ä   ¿  ¿  ¿  ¿  Ä              ¿  ¿  ¯                                 Ä                      ¿  ¿  ¿  ¿  ¿                 Ä   ¿  ¿                    Ä   ¿  ¿   Ä                                         Ä           ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¯                                      Ä   ¿  ¿  ¿  ¯      09 58 47.00400+02 15 52.1890  »C≤#@ÌÖ    COSMOS2015 	≥÷C≤$@Ìë=Ñµ›:o?ÃÕBœÌjA∏UÚA∫0∫A;É@@J6zêñºTTTFFFTFF    ?∞€"IÑ09 58 47.00300+02 15 52.4300J095847.00+021552.4J095847.00+021552.2>è\)>îz·>,1<ãCñ>5?}>5?}<ãCñ<ãCñ                            Simbad09 58 47.003+02 15 52.43@b∂D^{'/@”¨◊«?ÀÔµïö`rBé∞   ?óÃ9ˇ÷CÚ£nÕUU?ÏFÿ
+Bˆp-TÚD√„ve÷l¨Bé∞   øø]’.¡∆⁄X @b∂m†ã]@8yÄı]Ê@4õ©?ˇ P?‚~EÄ<—B@ )Ã`ñBÕ?Ú`ÅÃQ…2?ÆÃá-êú?Áπ8õR ~?1?µ}Ç”Ñw?Ä  ?Ä  ?Ä  @8◊ﬂ‰◊Ü?∞£◊
+=p§@7fÄ†§O÷?°4ÍJå@6Jdøù9a?ëÇ©ì‡ﬂ@76ªü}ﬂ)<‚e@5è\ íFøAWÂ∂ßlÓc?à_ˆîFt=üE:`W@QÚÆN\Ñf¿<∑}J-†£@5£`¬∏w<+@4Z¨‡û:È;ÎÌ˙@3s‡¢lß?úæﬂ§?Ê@4HSÇ^?ñá+I∫@8.;ø…Ø?‡®¡T…Ö@7É∂@ôMC?√∆ßÔù≤-@5ît_Mmq?°¯†ê-‡@50ñ¿°E`?•‹∆?@4æÊ?dôﬁ?¬Ov_Ÿ@4¬Ç@∑Ä4<˜e˛@4÷z wE<tº?ïJ¬õÒbÆCivano12C–Ä @b∂lÙ!-@8q`ïl)kÅ*?g*?◊ﬂ;dZ¨@üAˇã
+Ë5E≥Ú¢I¸Íl?˙?µßÌ?˘ƒ˚óªs?Ï˝SıÀ ?ˆÖÁ÷=é◊?„•Ô≥Å¢,?‹£ﬂmπ@ˇ?÷t¥*ø”N9¥V¥B?⁄’HúQ?Ÿ®Ò¸1>f¿2NQﬂ∆§ï¿3∑L‡Ébˆ?¸yú eÄ¿4†ûpô¿3≥ Ä©Ã¿4èQ≠Dq¿4Úiø∑:î¿5~Ê†≥iN¿6— 84$¿5'jﬂqÍˇ¿5ß`+π¬?ˆè∞ÀÊ?∞£◊
+=p§?°4ÍJå<åM?úC,•zxl<B¯8<+;ÎÌ˙?úæﬂ§?Ê?ûÏø±[W?<tº@8å Îr™@7†G oëà@6D``íÁœ@71üÿw¸@4ÛløE˚ç@4zÜˇc"@2‡Õ†1cO@4Õ¶πŸ´@4≈tˇÜ]}@§"âóƒ@àÊj,≈@_üΩ†	@§]ÖT÷?˚òAuU”?ÙB÷#ç£¬?ÌZvnfé?Àñ÷p∫}??Úp‚ (z?Ú5D◊†e?§fI‡Ù°˛        ?€Eò%%Sw@:‡    @$ã¡¡ @%~VG4@	q7œ?øcid_417  @b∂mºÃÿ@8Äøu¶¡=ÃÃÕE‡“ˆ<!aÂ9r8ó*5E'á‘B*=qCbÕD·MB[{Eë¿);Øˆ”9+˜j)$‘Ó&°hµB  CVDvEB"QÏE0œ3;ÜYK9Ã˜*ºÃ'ô◊ÃAÎ
+=Ci
+DO†§B(ˆΩ£◊
+Ω·GÆΩu¬è=#ˆƒ¯)›=AMÒ∫w=EÛ§óå•HË^A¿ü5:IŒaQöT@E·∑Ãew
+I
+Ã`ßäóÍ?±Î(8ﬂ' @Rà˘Äô   áXMMU_J095848.2+022409@b∂m=Öúç@8uíST;?ÅGÆ@\)=è\)@H   '@†-ôôôôö@◊
+B_¬èAè\>¬è\!@Ñ¿H  D£)@3◊
+B_ÎÖ@Æ∏R>«Æ@‰íH; Cn
+=@ÖB?ôö=nÁ´=A=búzxIœÒ=o9'oï∫yH›”ÊÕ ÚHÚ- 1=˙µH˛~W∑˙ﬁÆ@E–o§N.)=02™∞••~@"ÅaºP*?Èä˙°OÒÿ?˙m∂¬Ø:@Ä  ‰íI?”m∂@Ç€n?≈È≠ˇåß                                   Ä   ¿  ¿  ¿  ¿  Ä              ¿  ¿  ¯                                 Ä                      ¿  ¿  ¿  ¿  ¿                 Ä   ¿  ¿                    Ä   ¿  ¿   Ä                                         Ä           ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¯                                      Ä   ¿  ¿  ¿  ¯      09 58 48.21387+02 24 09.2340  ¸C≥n@√†    IRAC       >ÆC≥m@√z=2ïÍ;Dõ¶>¿ÉBsÖA≥∞DA∂∆            TTFFFFTFF   ?±Ëô©J809 58 48.21400+02 24 09.2100J095848.21+022409.2J095848.21+022409.2>Æ{>∏QÏ=Ìëh<ãCñ=˘€#=˘€#<ãCñ<ãCñ                            Simbad09 58 48.214+02 24 09.21@b∂m¥\KÍ@8pÄ„1?≤'\–a¥Bé∞   ?óÃ9ˇ÷CÚ£nÕUU?ÏFÿ
+Bˆp-TÚD®Æß±ncíBé∞   ø—´ïπQ¨≈é0 @bª‘È≈+@Zﬁ¬òñ@6PB8?Ó Ÿî[l7@gMúk2?‚Õ§yq@øÕé®¿CP?Í&A≥(∑?4®¡?Ã‚mH˜Q?Ä  ?Ä  ?Ä  @:2˛¿dﬂ~?ƒºj~˘€#@7˙†I∑?¶RΩ<64@6∫ˇÉ~?î„º”ZÖà@7ãòøp<˙¨⁄@6I^ü»áƒAï/X≥;'f?êˇó$tSè<˚`È6Ú⁄å@R'FïÊá¿<Â§#
+r@6	K ØRi<o4◊@5˚<ˇdœç<ê-‡@4pHSÇ^?∏l"h	‘ï@63üiΩ3?±$›/†@X¿     @7Ä     @8	=‡5_]?ŒOv_ÿÆ@6w_ò?≥S˜ŒŸá@6Nﬂü7hL?¡x‘˝Û∂F@558‡^*?ÃM:í£@6ø@O¬=è'ª@6&ÄùIR<Ñµ›?î9õ,@–´Civano12CŒÄ @bª‘V.	ˇ@Z<!~|'',r(Y˘g@33@ü,Å@‹ŸJ‚S&èEÚi*ñÑÜ@Ω$·`ÿà@%´”⁄ﬁ?˝¸˜+Ø±@^Mªtµµ?˚&Ú‚
+L?ÙuT∆*Ú?Ê˝%ói>øÛ¶™s‹pØ?Òèe©O?» Ê)ï%¿8À‡=¬Ÿ¿9‰æü„_∂?…Ô“ãS ¿:ÏÄ«:Ω¿:Vﬂ‡•»¿:√(?∫*3¿:ò0Ç|G¿:ÿàv\¿9Øs≤LÔ¿:e]ï«}¿:dÅ«`|?¸_+˙YÕ–?ƒºj~˘€#?¶RΩ<64<ßÁ?üUõ=»K<á¸π<o4◊<ê-‡?∏l"h	‘ï?±‰˜e˝ä€<Ñµ›@8Ê≥¿åL™@7û≤g«@7& D…^@7£Äæ Å@6F`¿48@5†ﬁ ≤'/@3–∫K‚@6Ñ¿ƒÄŒ@6Z`û¶I?«∞ÓIıò?ÕËöÛ5Ì?”!ØËêw≤?–nWaÂP?“Å	{∏?‘15,1∑?“‹€7…öÈ?»'¡ÂË˝Ö?”∑ç5H ?‘ƒ¯¬Ù›?íg¿πÓ§?ø¶iã¥‘â?ﬁ∫Œ2'öy@õ“F ≠@'ù’ wı@(Aﬂû`©?‚≥˚’ØØcid_413  @bª‘k*™’@Z>eÖ.¬>! ¡C©≥3:k™ﬁ8ûˆ—(~ ≈&´AA=¬èC&ΩqC‹)Az{CM°H9ﬂX¡8WñT'Bé6%ªÌA£◊C&
+BÑû∏A-∏C@ 9Ú8ó8h]L(|3ö&ÚA£◊C&8RBï¬èA7Ö<ı¬èΩ·GÆ>.{<‰¯q¡X=/4/≠=`Ãaò%qI%Œw£é∫ÅILDá˘úÍÖ@Få·ƒ/@ILx8x∑+X?À6∏ÎŸ@Ω°V*e  XMMU_J095928.7+021738@bª’u}Zü@YÓàﬂ73?Æ{>Æ{<£◊
+@º<< ¡ @c“·GÆ{?åÃÕBY¬è?º(ˆ>#◊
+ £A.&P B¿(ˆ?º(ˆBX{?ï¬è>\)A?s¯ D Aéı√?ú(ˆBA{<ÍhBÑ]øÜ=<e√≠ÄÆÒ=A÷ÁLëX‰I+u∆?-JIGü¨(é•gIMÆ[±`™@Fèò!f‰<¯⁄ô!ò}Ë?ÌóIØôÆø•É ß%!?Ï<<®1öÙ@ááq∫Ë?a·Â@äZZ?·L JA¶                                   Ä   ¿  ¿  ¿  ¿  Ä              ¿  ¿  ¯                                 Ä                      ¿  ¿  ¿  ¿  ¿                 Ä   ¿  ¿                    Ä   ¿  ¿   Ä                                         Ä           ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¯                                      Ä   ¿  ¿  ¿  ¯      09 59 28.72467+02 17 38.4580  OCﬁ§@—(    COSMOS2015 
+ÌCﬁ£@—=2ïÍ:—∑@V{Aº±VAƒøA«AåAJ∏Ç@}<è\(ı√TTTFFFTFF    ?¢Êpâo+09 59 28.70800+02 17 38.3400J095928.70+021738.3                   >Æ{>®ı√=aGÆ<49X=q©¸=q©¸<49X<49X            ˇˇˇ˛          Simbad09 59 28.708+02 17 38.34@bª”ÊTÏz@ZÔ‚»?—®ÄBQBé∞   ?óÃ9ˇ÷CÚ£nÕUU?ÏFÿ
+Bˆp-TÚEµ°YcﬁdBé∞   ø’«q«rF°¶ @bøÀ‡Ù@w¡ÿ}@44@ˇ§ên?„'8Ç'ç@(ü?œ"Ë@¸ÛÚq≠î?ﬁÖü¯öá?ÁÇ@∑Ä4n?	?øW}ïW?Ä  ?Ä  ?Ä  @6:†I∑?êñªò«‚Ç@55µ©-ã?à*ô0æÌ@5SÒ?r‹ñ?ÖÅ$›/@5ÛnòKº<hß@5,(ˇ”äVAA≈©ˇy%„?ÑFsÅ◊€ı=$˜ﬂE @QîmÉ–¿< ÆälÄ@4õ¿?`h;Ú{≥@4É⁄ê€;À)_@2¨]`-gA?îz·GÆ{@4|∆@¡ë/?à«‚Ç@∑Ä@6ˇAˇ~–¿?∆µ'ª0@6b`#VF?´qué!ñS@5¥ï é?†©*0U2@4∫k_ jÛ?óçOﬂ;dZ@4;P¿Ù*?∞h€ã¨q@4h€ÌˆÈ<«‚Ç@4x«‡‘¡é;Ô4◊?ì¯U”å⁄Civano12C·  @bøÀÊˇÎ@íd2ã'€jV(¥$‹?Âëhr∞ ≈@Ø∆≤ôøEƒF„@Äti?ﬁmbŸÈÎ¬?Ê¯ŸeaÉ©?ÈwfhÍ•?Á¬ñ%ú?Êﬁát”Ás?ﬁ=nÄ\?ﬁeO1Ãø—ƒ,Ô?ﬁD1à8HF?‡WÎâP¿5K|†déˆ¿6çı »|‹?Ï±#˘⁄L ¿6ÄÜ@ ÅÄ¿5–„†MË¡¿6ñÆ‡Rªè¿6È ß≈¨¿7s~ óO<¿8uˇ`ù–¿7‡°ïÁ¿7˛ü≠Ø—?Ù'Ü>ﬁ`?êñªò«‚Ç?à*ô0æÌ<,1?ç„º”ZÜ<"3ú;Ú{≥;À)_?îz·GÆ{?ò¸PH;Ô4◊@6R`$à@5€ÿˇ‡ˆO@5y@]æ!@5∏¿u¶u@4ÄÓﬂFL@41∫ An_@2ì|‡%o%@4jiø∑:î@4mŒÄ+3ä?Ú|»r ¯∑?˜¸0Ç~ ·?˘`2oø?¯Ë.á“«π?ˆ!~’»Ù—?Ò$oaë?ÍO—.[]? ¥£
+[£ï?Ô≈˘©§©ò?Ôò µ¸ß?§H£›¿:?û∂≠¶ñÿ?›ÓÓ_ƒã∂@ßØ¨    @&—k%@&é?wÂ?–òŒŸÔ/cid_450  @bøÀ—Ö'@êdj!Ç=€"—DIä=:Ì=Ö8‹3q(ˇÕÒ&Ì AAâp§CÆCãﬁ∏AÆffD7Æ:íÃ˜8¨-'ˇÕÒ&+AYp§Cs3C*c◊AàÃÕCwÕ:G:º8è›X(–˘'ô≤A1¬èCYöBÒ·HAg\)æ8QÏæä=qΩ£◊
+<˛^Æ+Ô∑∑=≥≈á f=^Æ+Ô∑∑H„'~Á<¢Hˇ(–62 {@E—£¥)^I'~Á<¢?≈ÊJqÁ|@
+6˚Î   XMMU_J095958.4+021530@bøÃ'ˇz@ó◊ø?ê£◊?æ∏R=u¬è@Ä€ÎÏ @â¨ı¬è\)?ÜffB@p§@4z·>îz·A$â¸ ChÇè?∞£◊BA∏?åÃÕ>Ö∏AΩE 7 A7Ö?îz·B&¬è=›v{’5==hL¿x⁄Ñ=RÿÙ†7À«HÙ7•çì.HÌ¨˜!ÿöIˆƒ‰ƒ´@E‹π˝ï∞[=!) Êü“?ÎpüuƒÊ(ø±£0ølD?ÚxDß@fó?Áü…5HË?ì¬%?ÚAI?œ´l∂í                                   Ä   ¿  ¿  ¿  ¿  Ä              ¿  ¿  ¯                                 Ä                      ¿  ¿  ¿  ¿  ¿                 Ä   ¿  ¿                    Ä   ¿  ¿   Ä                                         Ä           ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¯      09 59 58.6106667+02 15 28.379000  K@÷ffC˛Ö@Å(@˛lΩ›iÀ09 59 58.61067+02 15 28.3790  KC˛Ö@Å(    COSMOS2015 	•7C˛Ñ@ÄA>KCñ:IR?(¥9AÊæÍAµUûA∑0!A*’ﬂ@÷8ÜYKFFFTFFFTT    @˛lΩ›iÀ                                                                  ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¿  Ä   Ä   Ä   Ä                                 ¯      ¯      ¯      Bé∞   ?óÃ9ˇ÷CÚ£nÕUU?ÏFÿ
+Bˆp-TÚD∞√8*„¡¬Bé∞   ø·3N$NÓ_≈˚  @b«¬ˇ˙ √?¸C-|:B@4†2‡'§?‰R§¬†#@#ßﬁ÷∫å@ $˘{w&?”ÇoC‡≥\?Êtßq…p¯?n/?ø`óÃ: ?Ä  ?Ä  ?Ä  @8∞æ Å/@?≠øHÀí:@7Ñ`†S«˛?¢º£n/@6©ô†Oñ@?îz·GÆ{@7{~†õ<˜e˛@5Ò‰ˇ…y[AoöT}	1`?å‡uˆ˝!ˇ=qÔ ÜÔ@Q˛NÜu–g¿< =âMr@5ﬂ1S_<tº@4~Ê?dôﬁ;˘	l@3ÿ?«ñ,?õ"–Â`Aâ@4˜yüˇh?ökP∞Ú{≥@X¿     @7Ä     @7∞ƒ†Æ`—?∆Ê1¯†ê.@6T‡®K‰?¥SéÛMj@4Ùzﬂö.Î?§¢3úæ‡@4lπ Gû$?∂»¥9Xb@4÷R¿ó4e= 4n@4åd Zò”;˘	l?íπMîâaCivano12CåÄ @b«¬ejΩ‰?¸CLä≈¡(‚˚>)¿˙∞?‰õ•„S˜œ@Æ™˘]¶0E√.ÅF|I?ˇTg{9\B@cÇ˜”?˚ `»ó≥Ê?ˇnÆ¨ü0?Ù°w\‘?‚›£ïﬁ˙?Ÿ:Ñ¿≈ø›ÊJLTli?‡ú≤RŒ.?ﬁãÇA÷d¿41åˇWcî¿5ïˇëE7?Û“rcï–¿5Ûp¿\|¿5hpøÖºm¿6E6‡f›Ö¿6ÄÂ†ig¿6“; g~î¿7dì,2¿6õó_,∂A¿6⁄ŒTsˆ?ˆ8pû0?≠øHÀí:?¢º£n/<£◊
+?ûÏø±[W?<g∞<tº;˘	l?õ"–Â`Aâ?†ç∏∫«;˘	l@8Å™Äq™g@7—[üc6@6∞Ê†≥iN@7_†Ä=®@4ÈM c”@4tX r«@3âˇ»¢ú@4ƒ\?õ˜B@4∞ﬂ?ñ@„»\$ƒ@#ÌŒl‡@A=ùÄ€@2{bvÌù?˛.Ü∆X>Ö?˜™ƒIpåZ?Ú˙⁄«aS?€,Üp«È?ˆ:üg?ı¬∞~∏l√?ôVÔ–›”Ö?j5k◊Ã€?≤Ìi$Ü»@ÅÍ∞    @%ˆRTì÷@&ó;!>>)?˘»5Ô£Zßcid_281  @b«¬PsÈd?¸CJø¿õ=ÃÃÕEãtf<¬„9j·ã*úë'}§äB33CEffDêx B/∏RE<≤∏;óc^93Nw)Ùö&õ§¯Aÿ{C?D%®ˆBffD¿]√;VM9ÚE)ﬂ‘2'úπ´A∑GÆCMÆCˆLÕAÊffæôöæLÃÕΩÃÃÕ=cî_qÙî=:ü(x≥=@öÁVC∏I∑V 'wéIT˛[@FØ„UÆI"æzÉƒl÷?‘Qö3<:N@#“aìm   hXMMU_J100058.1+014559@b«¿Énò?¸CVñÂä3?}p§@ÃÕ=è\)@6€nı +@¶AaGÆ{?œ\)Bnp§A\)>—ÎÖ˛@üŒ %D†∫=@33Bq∏R@ëÎÖ>∏QÏ@¸°∞ C2ä=?Ó{BKè\=?+§ZŒo=^à-zãº{=k|F*-MRH˝†±/“ÜÖIíh:Ù/I“KÛau@F∫EnÂ=0VW@6?¨@˜À—|_?Î¸≥	Ö=?˜÷4A\’?˝«ìD§µÀ?æ±¢@Vw?Ò°GHáp9                                   Ä   ¿  ¿  ¿  ¿  Ä              ¿  ¿  ¯                                 Ä                      ¿  ¿  ¿  ¿  ¿                 Ä   ¿  ¿                    Ä   ¿  ¿   Ä         10 00 58.2036000+01 45 58.964000  ∫COM AGN ø∏QÏø≥33B-Æ@ú(ˆA	GÆC>?‚¥?«_πSg©10 00 58.2036000+01 45 58.964000  ∫    C>?‚¥?«_πSg©10 00 58.20360+01 45 58.9640  ∫C>?‚µ    COSMOS2015 ÷C>?‚r=0 ≈:IR?|ÓBìÕA∏1∏A∫√A0⁄Õ@&ûötTFTFFFTFT    ?«Y©O‚ê10 00 58.21200+01 45 59.1700J100058.21+014559.1J100058.20+014559.0>ôôö>è\)=˝Û∂<Dõ¶>ì>ì<Dõ¶<Dõ¶                            Simbad10 00 58.212+01 45 59.17@b«¬¯7¥¢?¸CRÇ˚!\?¿\@\¶^Bé∞   ?óÃ9ˇ÷CÚ£nÕUU?ÏFÿ
+Bˆp-TÚD√xæ-èvBé∞   ø÷‡D®{ƒƒ™  @b»øüÛOÓ?˛Úã£6—M@5˝õ °Êo?€æH•ã?@$≈Eë–w@(‡±NÉ0?Ÿ∞nŸÔë?‰ÍJåM>Î˚?µ⁄'(bıô@   ?Ä  @   @:æ( ∞y∞?œ$tSéÛM@9…D`Ç ◊?Ω≈÷8ÜYK@8ŒäJb˚?∞ÿD–©*@9‚M‡]£I>K^@7“u =ç)AÕ&Z≤˘Ø’?¢-Vì<À≤PPkcı@RûÿnV¿= Û„º˛M@6âQNîπ<öu@5ÉïX•¥<T˝Ù@3µ`?€∏"?®D–©*0@6Éõˇ•g-?∏	‘ï*ô@X¿     @7Ä     @9ﬁ}`}Ô?Ù*0U2a|@7@ƒ†Æ`—?«Ôù≤-V@7!‘±û?—‘ï*ô1@5æB_ˆ‡ù?œE8Ô4÷°@6(ıø4]÷=É‰&@6<(ˇ”äV<ñªô?ìKQ7*8πCivano12C∫Ä @b»ø	ï™¯?˛ÚÔ
+Â6P(b˚>),0?Ïºj~˘€#@∂ôd(IﬁDEÃÿ⁄‡3Ô@Ú(;àlK@H˙Â‰À«@;E]ÿ"k@ñº5•‘@2Ω›E¿‘?˜ä¶∑èMÊ?ÍÍíz¡g>ø◊·∞ÙˇÒΩ?Ûïù¡FÜÕ?ÙdÑˇÆ°i¿3ÔÁ`Ã…r¿5Ø•ÄW©4?˜>AÔéò¿¿5Ë®Êj-¿5Ä>†NøÅ¿6C≠à[Ñ¿6ø#_Äô¿7#âüPí¿¿7∫„Ämx©¿6‡.üOº ¿6ŸÈ¿"ö_?˚˚·¯≠¸ ?œ$tSéÛM?Ω≈÷8ÜYK=Ü¬'?¡	kπå~(=hs<öu<T˝Ù?®D–©*0?∞|Ñµ‹∆?<ñªô@:}SÄ∞îà@:=‹ˇI˜õ@8ø! 8B@9·»æ‚(@6Ée∂ôÖ@5ë«†=!…@3°Ôø@P@6,‡ˇâ∏{@60Á Tπñ@=≤¿≤W@	6·aØH@æÇŒí†@9ddIV@ p˚´©?¯D£2üè}?Ú*∏:në?’áïã◊?ˆq∫!œ]°?ıı›“Æé?ûæ`"á>÷¶4≤è3Â?≈Td‹"´@F  Páÿ@&‘¿∑’@&∫Ã_øÉ8@Ö!·‹¬‚cid_373  @b»æÙîÃ\?˛Úó¿>á+E}Ï;Å¬„9b0)å‹',7∏A–  CÕDÊfB◊
+DºÍ=;$8ÛE(ÑgÂ&SŸmAûı√C‘{Cµo\A∆(ˆD,KÖ:ø]y8√™)Gı∑'L§¿Az∏RCÏCm˝qA°
+=æW
+=æè\)æôö=˛C$Æ@='qã•l2Ò=0k…
+ ¡óIœ÷‰3	ÕIÎÉ™u¸@Fq∏ﬁitI$ıÿQzÖ?› °ÛrÔ@)À¶(Æä   QXMMU_J100105.5+015602@b»Ω„˚Ω{?˛Ò≤_c<Ê?ä=q?¥z·=LÃÕ@bÛKG @íZfffff?º(ˆBcôö@e∏>îz·¢Aõ‰ C•£◊@z·Bc  @ £◊>è\)A^‚∂ w BD·H?—ÎÖBD∏=«ï™>Î =JàJ$ﬂì˚=W†⁄÷ƒâI ”;!†IˆÆô0IÈ™oEy@FyÍj!/=x ‹t@B-ÂVp€?¯¯C#à2Ω?Ò–ÀSTΩ±?ˆŒ˙î‹0Ø?éÜ[@"?ÒªK¥.T                                   Ä   ¿  ¿  ¿  ¿  Ä              ¿  ¿  ¯                                 Ä                      ¿  ¿  ¿  ¿  ¿                 Ä   ¿  ¿                    Ä   ¿  ¿   Ä                                         Ä           ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¯                                      Ä   ¿  ¿  ¿  ¯      10 01 05.60253+01 56 03.2210  !CE˙?˜î»    COSMOS2015 rdCE˚?˜î1=üUõ:IR?j~˙B≥t]A∫}ºA∫¶ZA7@;…‘ï*òTFTFFFTFF    ?≈ﬂ±#ÛÎê10 01 05.60100+01 56 03.4100J100105.60+015603.4J100105.59+015603.4>îz·>ôôö=≤-<Dõ¶=¿É=¿É<Dõ¶<Dõ¶                            Simbad10 01 05.601+01 56 03.41@b»ø.HË®?˛Ú–*ˆeØ?”é»z‡«HBé∞   ?óÃ9ˇ÷CÚ£nÕUU?ÏFÿ
+Bˆp-TÚD∆≥X9IÃBé∞   øﬁ^{F¢ﬁBEM@ @b ¿`∞@x_¬Wˇ@3¢ Îr™?⁄8ˇ˚ŒB@1ö…†»b?Ù…ùˇ€Ÿ˝?Ω_∞ä∫??ÁE#ˆMæ?¬?£Í≥g†˘	?Ä  ?Ä  ?Ä  @6»ìÄz‰£?ñìtºj@5è|‡%o%?åwökP∞Ú@4≥õˇ•g-?Ä-‡qv@5föﬂÍ∂√<2ïÍ@4q∞è,XAT£XBF¡?|¨1&Èy=,0CÒ@Q|›ÜXt6¿;˙¸
+' V@4*«‰°÷;«‚Ç@3®Ü` Òò;ßÁ@3µ‡!=g?ô≥–|Ñµ›@3¸<†ö>€?ÖµsÍ≥g°@6ˇ\ íFø?»ç∏ª@5Ç©†w⁄,?ö6‚ÎC-@4i∫_‚æß?âôôôôôö@4M‡]£I?êñªò«‚Ç@3¿ÚÄª|B?™u%F
+¶@3Îã†≤íè<öu@3ı°¿Øà;æÌ?îf+Æ≥ÍCivano12D$Ä @b ¿6‚Î@xÅí∏'ü?N(´#?ª•„S˜ŒŸ@:‘mU≈}EìÓ,]>+?⁄Ìf4Ë??‹Ÿ˘€˘êz?ƒôß‹R{Œ?“}h
+´T≠?Ωıó«1Ç?≥¿ÙQvY?®ƒÑ(Ôìø«^∞èdd?∞¯AFm?´»ü@¢á¿0!í`¿48¿1b[@òvÑ?˜ˇ˝ƒ¿1ÙPB8¿1a ‡cÇÜ¿2)«¿ë·¿2gj /Jp¿2‚L j”¿3J˝ q?¿2£›†Yß;¿2ñ≤ø€L¬?Ùç˝Ñ$¿?ñìtºj?åwökP∞Ú<o ?ÜRΩ<64;Â`B;«‚Ç;ßÁ?ô≥–|Ñµ›?ì@N§®¡U;æÌ@6ùJü`Ç¯@5ø&ü¶˘‘@4—< aNœ@5Y‹»7<@4-†L;B@3¬6øØ≠ÿ@3t¿ú<‚@3ˆYVù@3Íï ≠§È@£ÊÅ©∏Ã@	À∆<è”@0¡•*@ <4cµ?˛˝≥ıer?˜{?VW$™?ÚÃÒ™±?⁄k5m†ã?ˆ1‹Ò›˛?ıï¯‡Q?ôªB`Õ†1?q5ËYmZ?µUlC9Å@î†    @"∞›øcWæ@#Q2ˇ0Õ'?≈ Ñ	…Ÿcid_658  @b ¿Á[Ë@xkjâB(>Åâ7Cµ9ö:¿≠8‡e1(€∆í' C4A\(ˆC/§C&0§Aá∏CQ^∏:?†î8†§P'∏”Ê&eAÃÕC(ÓBöz·A:=qC‘{:Cˇ8§jÆ(Ãv£',7∏A  C;
+B≥ÎÖAHz·<£◊
+Ωè\)=·GÆ<ˆﬁ#ÎÌ6R=LKÓ»=1L9†µH{›⁄/*pΩHû”ººØ⁄c@DÈŸê¬Ö}H†ë_Œ>´Q?œ+ı⁄ﬂ@≥&oœºG   -XMMU_J100120.6+022600@b ¿l ⁄@wˇõV2<?ùp§?
+=q=#◊
+@Ì	zA @t”Æz·H?´ÖBbp§@¬è>kÖ ˚A0ö CVÄ ?ÃÃÕBiè\?∞£◊>aGÆAé V B  ?°GÆBNÎÖ<¯@”rÊ=C9>b‹ı=M0ØQH}UQâªÖÔHíΩûµMHúaı€<r@DÂA‹ÏπÁ=‹<•Ò⁄?œª∂ò]ø„a€6W/†?ı	{§~@q«°/r?®Kÿ@w¥%?ÂçÛÏπ3                                   Ä   ¿  ¿  ¿  ¿  Ä              ¿  ¿  ¯                                 Ä                      ¿  ¿  ¿  ¿  ¿                 Ä   ¿  ¿                    Ä   ¿  ¿   Ä                                         Ä           ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¯                                      Ä   ¿  ¿  ¿  ¯                                  Ä   ¿  ¿  Ä             Ä   ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¯               Ä   ¯                                                                        ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¿  Ä   Ä   Ä   Ä                                 ¯      ¯      ¯      Bé∞   ?óÃ9ˇ÷CÚ£nÕUU?ÏFÿ
+Bˆp-TÚ¯      Bé∞   ø‘ãÕnûFó` @b≥‹˝Á!@ÍƒÁ%>@6çÄ¿Ñ¿?ÏŒY)gó@ ¿cæÏ9z?˛≤xH?“ˇÖà”ú?ﬂ[’Ïkœ>ê©?±&A≥(∂ÿ@   @   @   @:M‡a’?œv_ÿ≠´ü@9}≈‡IÅS?∫0U2a|@8€†∏qÃ?±ÎÖ∏QÏ@9qƒ@6Pı=√ïÅ@8,~¿è®Aﬁ\.*Qô#?¶4ÍJå<‘ùvñdªë@RÉ2ˆaÒç¿=û∑úµÆ@6¯Ü` Òò<À)_@61‰ˇ…y[<•zx@4Ç¯@?¡«y¶µ@7˜øøû?ƒwökP∞Ú@X¿     @7Ä     @8^û ?Ÿ=Ÿb∂Æ@X¿     @7Êf_∞i¿@6|Ù Œ¨°?«4÷°a‰˜@5ƒ…:r√?”e˝ä⁄πı@6æ5?|Ìë=Ú‰è@6øU†EÖE<⁄πı?ìtºj~˘€Brusa10 E¨8 @b≥‹Hj“›@Í·∏\&t˛Ó(>Ûﬂ?QÎÖ∏R@∫sk:œ,üE–·P∏G+@ ≥'≈@ÁQ@$ï%ñí~@⁄˝Á˜À@oW;P8'?ˇ“kyÀû?ˆù å˙?Êﬂ«Ê≥˛†ø„ﬂ∞’Å¶?ÚéÇîöVX?Ô˘ﬁÈ/#¿3ï`Nı1¿5N‡”?ı‰…˛º3 ¿5Œ˜‡vÕΩ¿5ck‡"ÍÁ¿5˜Á`Ã…r¿6òé‡3∑¿6¨^Äæ◊A¿7Oö¿6ë¯`ÓW¿6gæ†∫K?ı◊»AÌ‡?œv_ÿ≠´ü?∫0U2a|=è\)?∏r∞ ƒõ¶=0â†<À)_<•zx?¡«y¶µ?æ\ë—N;Õ<⁄πı@9¯ ‡–è–@9§]Ä◊Y@8„Wø⁄v@9s2?Ó,ô@7$Ã?ﬂ @64˜_Gé4@4y‡ìS.@6“Ä?UÄe@6†Ö?oÅò@e:Å‹≤@6^{∂Yƒ@ ¿_â”S@lø{´r	?˝ø8tªìø?˜∏oË∆'ó?Û`ëä◊^˜?ﬁh⁄IçÃ?ˆfæ`"á?ıÎ¶AG»Ï?óyV-3>Ú?q,^,‹?£Í$Ãh#@SOˇÚî@%—ºAdN^@&tUéUô?Û_è2¡Ñlid_3944 @b≥⁄’ì∏@Í∂Ûõ:>˜ŒŸBÇî{9ïÚE8P	ò'∞.J&tkZ@∏ı√C>T{BL=qA£◊¬«ÃÕ8jv+¬«ÃÕ%Óßù¬«ÃÕ    ¬∆  ¬∆  ¬∆  C =9Ê)ï8*µK(qdò&¥$‹A,z·CG¶fB•W
+A@z·¬∆  ?s33¬∆  <ªŒpı^HÑ= [B÷H<ÙáJùèAH∏N–RPπÙIñ6ÄI1@EÍˇ«@\+HÒÒ’´$b^?Ájãmñì@@.˛’˚‘m  áXMMU_J095828.9+023652@b≥›$ûD˙@ÍïÖ7‚≈?ﬁ∏R=∏QÏ<£◊
+A±« 4 @(Ä     ?—ÎÖBk\)?áÆ>8QÏ ÇAáŸ] B]ôö?˝p§BnGÆ?Üff>W
+=A†   B Aã\)?ÀÖBRôö<Œ9o‘U}N=;åY∆-Ãµ=;œÑ¶;gH kÌπ*jÂIDÊ)+πIs ¶*öq@E›¯•&ö<– ìY˙OË?ÍÇŒ!ÊRø∂œL—8?ºq≈B^—ç@'UU4  =„é*A<q∆?ÎúƒÏ◊æ                                   Ä   ¿  ¿  ¿  ¿  Ä              ¿  ¿  ¯                                 Ä                      ¿  ¿  ¿  ¿  ¿                 Ä   ¿  ¿                    Ä   ¿  ¿   Ä         09 58 28.9555333+02 36 51.595000  ∑COM AGN ¿Æ¿ÃÕB.ôö@XQÏA¬èCû„@'Q7?¥Æπ◊‚$09 58 28.9555333+02 36 51.595000  ∑@†  Cû„@'Q7?¥Æπ◊‚#09 58 28.95553+02 36 51.5950  ∑Cû„@'Q7    COSMOS2015 <xCû„@'P†>ì:ê-‡?S˜œAﬁ∞√A∏ü˙AºvqA2‰Å@.Stºj~˙TFFFFFTFT    ?¥Æπ◊‚#09 58 28.94900+02 36 51.6400J095828.94+023651.6J095828.93+023651.5>Ωp§>û∏R=•„T<u¬è=¨1=¨1<u¬è<u¬è                            Simbad09 58 28.949+02 36 51.64@b≥‹ 8ÃA@Í-käÚ?»¶÷®˙‹aBé∞   ?óÃ9ˇ÷CÚ£nÕUU?ÏFÿ
+Bˆp-TÚD” !vß+Bé∞   ?∫{ñßπaF¢∏ @b≥$ Y@zÏ›‰LE@7|Ã˛£	?ÌP∑=èC@uÀˇGs\?ÁwΩÒ√Yø¡=&óbû]?Ê!BoÁ?m∆?∂‡Lí8?Ä  ?Ä  ?Ä  @7‰,?˘Î?¶»¥9Xb@77KøÒÚ˜?ü!-w1è≈@7Q Ñ?ôôôôôôö@7cº‡∆~’<ÎC@7^5?|ÌëA≥pÙùsÈË?ú‡uˆ˝!ˇ<ˇ– [#î@R∏Ó^¿<‘[¸ÒÆ@7Añ`)5É<ÎC@6€øÑÂ≠=o@5
+JÄV“u? ÎC,•z@7Hl«©? ÕûÉ‰%Ø@X¿     @7Ä     @79¿‡/Ä ?ºÙ!-w2@7åûﬂS∏?…∫^5?|Ó@9Ω†	c?ˆ™ÕûÉ‰&@6)¿‡/Ä ?⁄êñªò»@7W†ˇøh`>K¨q@7váCí&=%„T?ínóçOﬂ;Brusa10 E%† @b≥$xG@zˇΩ∫·(1B˛(≈Aˆ@\).à™@”%™˚n„EËp1y3??øÈ‹®#$?Á"uuŒ?Ï4ø≈}M3?Èzd‹Y2?€›qø?Ú⁄ÇË},|?¯0˛•åÌøÈ÷Z®VÃ?ÚgÃ,ì‹¡?ÚúŒá∑Ô∆¿6≤‡9ë¿7˜l_§´F?ÊiH>@¿8=úÖ◊E¿7ﬁ]`-gA¿8%œ¿ù¢¿8bXﬂï&m¿8™¥ŒÌ8¿8ùI‡‚i¿8E"ﬂ˛ÿπ¿8)åˇWcî?ÙVwˆ±¢∞?¶»¥9Xb?ü!-w1è≈<ÃÃÕ?ùcàeîØO<Á∞<ÎC=o? ÎC,•z?…ué!ñRΩ=%„T@7`IÙ@7Üq†VL=@7[◊ˇ/ˆh@7yJﬁ¬ô@7F4Ä:M@6˙WB÷>@4Ù©‡8∫\@72øﬁß¡@72b ¶-?ËQ≤€e?Ì0!e´UÑ?ØÚ6·Ñ?ÓªÀRyIò?Óª‘!T‰^?Ó-—î≤™?Í8Ûfîä?ŸñÀÙ_∏Õ?Ïˆüôç€?ÏÒLN˜?ñ5ñ∫¬N?4 Ht„◊´?±∂Ìgwû@v◊Ã Z˛@&˚?—ß'@'ö⁄hµÃ@
+£L∆lid_1832 @b≥$œ99@zÀ•¶¥]=ÃÃÕC£` :i’8©Ã(âœf&∆·A1∏B˝p§B÷\)AZ=qCY°H:Uã8WñT'Ö™∂%€A  BÛu√BQ
+=AffBÎÊf9ÀÚ≥8HË<(V_&”ŸnAÎÖCBNp§Ap§Ä   ΩÃÃÕ=ÃÃÕ<Ìå‹–ÇAØ=≤)ﬁÛ¬ª=wZSïL˜Ir”ÄWI5µoq:æ@FW¨ë'¿ªI;ÈFXäà?Õ8)Òç≈@	©ä‚	Ó  
+ZXMMU_J095823.4+024106@b≥!!B@{b«ut˜?è\)?z·H=#◊
+@Çúºw @è+◊
+=p§?òQÏBuÆ@(ˆ>aGÆA ª Cd∏R?¡GÆB|33?ùp§>W
+=Aàï⁄ U AÍ{?°GÆBg£◊=É©¯•æñ=>ùï¬6ˇ=KA\¡D∏7I1‡∂ùµ9I6p=ZÿaIC˘∆>îé@Fyî∑r0==P∞èﬁ@m¡ù≤Œ?ÿ©•[ç~Ç?ÔX—pX?ÙÂﬂQ˛?z∆à@:?˘(ïÈëé                                   Ä   ¿  ¿  ¿  ¿  Ä              ¿  ¿  ¯                                 Ä                      ¿  ¿  ¿  ¿  ¿                 Ä   ¿  ¿                    Ä   ¿  ¿   Ä         09 58 23.5591333+02 41 06.119000  ªCOM AGN øGÆøLÃÕB0(ˆ@é∏RA∏RCô!@+◊ï?§>iÔ=∫ò09 58 23.5591333+02 41 06.119000  ª@lÃÕCô!@+◊ï?§>iÔ=∫ò09 58 23.55913+02 41 06.1190  ªCô!@+◊ï    COSMOS2015 Ó€Cô!@+◊∂=+;7Ä4@∫^A®	 Aæä≥A¿e6A0jG@%;=»K]TFTFFFTFT    ?§>iÔ=∫ò                                                                  ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¿  Ä   Ä   Ä   Ä                                 ¯      ¯      ¯      Bé∞   ?óÃ9ˇ÷CÚ£nÕUU?ÏFÿ
+Bˆp-TÚDÌ®ÔiYŒrBé∞   ø‡ß…∑5™ﬂFÿÃ @b¥˚ÄŒ‹@ŒsVñ@4¢Ü` Òò?È≈Ûî∑≤â@#Ñ«ﬂ'Bd@7Ùt‡Q_?’NYˆbeÂ?‰È∑øéa?
+üæ?≤‰éäqﬁj?Ä  ?Ä  ?Ä  @7éH‡C¢?†ñªò«‚Ç@6Ω≤¢\∑?ò«‚Ç@∑Ä@6]w@©=|?ë—N;Õ5®@6ÂªˇıÔ<π#£@5«lÖ]Ao¿π¢82T?ä‘,<ûÏ¿=˜Qu>9@Qﬂ∆ñQÊ}¿<ô=ΩO◊.@55 Bπ<"3ú@4MOﬂ;dZ;Â`B@3w>üwˇÏ?ßX‚e,@5)˚‡∂éù?†Ú{≤˛≈m@7Ì )k3?–]càeîØ@6¢©†w⁄,?¥ÿD–©@5—Ω†	c?ÆBZÓcä@5/O S¥?¨PHé@4HXÛ÷&?≥–|Ñµ‹∆@4Î ã@;=eï@5£`¬∏w<"3ú?ìÁé2÷ÌBrusa10 E¿ @b¥˚iòJ@Œt_Mmq(Õ]8)ôU?Ì¬è\(ı√@∑ò–ä≈cÛEŒ!•3œˇ?Úf*°î9ﬁ?˙È≤f9ç?˘‘T∂:∫?˚èÌ6–?ˆ{å–◊?Ï⁄gı≤ü$?ŸbΩdy˝øÊÀù!‰V?Á1«X≈ ?ÂTJ⁄Ô•?¿5Í_Ñ ’¿6ÿπü…^É?Úu$ÎG¿7'û¿Jã¿6ª†RÒ?¿7à‡
+ó3¿7ôòˇ?Ê†¿8 ‡Ù¿7øõø‰Ü˛¿7∂] å˙¿7Äœø∆T?ıåÙI:‡?†ñªò«‚Ç?ò«‚Ç@∑Ä<éär?ó$tSéÛM<V°b<"3ú;Â`B?ßX‚e,?°≤ïÈ·±<"3ú@7>≈øíQß@7zˇzü@6sÉﬂÛ˛@6ÂÄøÆ Y@5, ˇTñ@4v“ˇÏ¥ @3È_™äÉ@4?,e∫@4Ÿ2Ø»?˝ï	Á‡Nä?˛ôCM\™%?˝	L)§>8?˛T˛ÂMÕ?˙©Vã'?ˆ%‚Ëòn?ÚØ˚€Æ ?‡∏˘!∂3?ı0»Ë#?Ù∫™:—ç&?ïî?]„·?Ñôr,mFT?Ñ©Hö£Ö@ôîê    @&∫™AáâÕ@']…`0¬@?¯}˙Çü¥lid_1856 @b¥˘ÿ£g@Œ•‹.O€=ÃÃÕF#¥ˆ<u¬è9¨}¢*ê}' ◊ñB6∏RC'D¯±HBf{EÌàè<!7Ù9éõ9)£ÓX'’ıBÃÕC$∏RDù;◊B7=qEPbf;πwÖ9Sœˆ*B«€'ﬁ®pA‡(ˆC'.D7"èB(ˆæÖ∏æîz·æu¬è=3/˜{Æ=FÃUÄ¶¨=Pﬁ6`Ó¨qI*≤±;vπI?∏‰"$†@Fl¬jr∂IGxÖEr°x?È«ÍŒÜ†p@–(ï  XMMU_J095837.3+023603@b¥˘?Ú^W@ŒÆSe?}p§@ÎÖ=u¬è@(k ∞ +@ß∞—ÎÖ∏@ £◊Bèff@Ÿôö>îz·È@àxx Dóù@   Bé‹)@Çè\>û∏R@Û#$1 CJ#◊@ÎÖBxÆ=	s›4ç;=Z‚&†joı=fg AÍ’Iπ#W⁄ÑIÏ›ºÇ¯I(§Ü‹@F8Ÿ≈ˇ≈=*[5
+&@'ı[¯Ä?‚‰˝ä~Ö∑?ÛtÈ3é?¸°Ø%w_B?ò≥ß@>‡ê?Ù¸¬Lƒ€                                   Ä   ¿  ¿  ¿  ¿  Ä              ¿  ¿  ¯                                 Ä                      ¿  ¿  ¿  ¿  ¿                 Ä   ¿  ¿                    Ä   ¿  ¿   Ä                                         Ä           ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¯                                      Ä   ¿  ¿  ¿  ¯      09 58 37.35527+02 36 02.9560  ÊCßÿ@&s⁄    COSMOS2015 ±Cß‹@&sÇ><⁄:IR?<(ˆAb^A≥ΩãAµòA4u¸@3 ê-‡TTTFFFTFF    ?Õú`ÅÊ                                                                  ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¿  Ä   Ä   Ä   Ä                                 ¯      ¯      ¯      Bé∞   ?óÃ9ˇ÷CÚ£nÕUU?ÏFÿ
+Bˆp-TÚD•0yYD·GBé∞   ø€ Ÿ∫BV¿Eäx @bºãÓ≤—@GÈ`ÅJ@8yﬂÄ-∑…?Ái5πpﬂ@€c·PËP?ÏÓ|¬îÖãø¶jw¨-Ê?›^Ò˝ﬁΩê>ùóˆ?¨ú#∑ï-@   @   @   @:áìﬂEuU? {≤˛≈m]@8¯y?Ü˛å?≤Ç@∑Ä4n@8‰`†S«˛?∞bM“Ò©¸@98Ë†gÈÙ=üUõ@8† øì(fBú°ÿL?´≤˛≈m\˚<◊ù:C–Õ,@Ry¬÷>eñ¿=èû#ó@8d`†S«˛=QN<@8(ßî˛=ÆHÈ@5ÄﬁﬂÙ«æ?…rGE8Ô5@84g@Ä˘ê?◊⁄QŒ_@X¿     @7Ä     @8›j /Jp?‡
+¶L/É{@X¿     @7Êf_∞i¿@86L j”?È'ª/ÏW@X¿     @633@ü,Å@8ï%?T©¶?a|@8k”¿Ì=•ù?îBA√ÔÆyBrusa10 BH  @bºäÔ≤™„@G˝≈ì®(((œ*d@Ö≈Ω‰“@ÿ:ˆVÓ’—EÓÌ?H¿‚?ˆ{è√WE?˚GWL?˙ûdøù9a?˚»4∑ó±?˚Ã,ˇ<ã¢?˚–∞áËî?¯}R¡mÛ˘?æè}∂Â˚?˙±‚J„S!?˙m¿ò$ ¿5ŸO_π£˚¿7±e∂ôÖ?‰ﬁXãé@¿7æØﬂV<M¿7q. §ª6¿8Ã@µ“µ¿8Q‘†÷§Ω¿8XX@2ı˜¿9ñ⁄‡ã∆r¿8#ø∏Ë¿842ÄÖÃ]?˝ÅaˇœX†? {≤˛≈m]?≤Ç@∑Ä4n=Éo?≥Í≥g†˘	=]óˆ=QN<=ÆHÈ?…rGE8Ô5?‚L/É{J#=•ù@9∂7`ø]y@9oz¿ê~h@9¿™õ@9Mqø_¸¿@8p5=Õ¡@7Î+@™¿@5ûæ Å/@@8G5ﬂµ›ù@8?ˇ±¸g?ÔirT±2=?ÚÛ¿µgU?ÙZÒ6;%?Û‘ç€ˆ5|?Òíx˘!∂?ÏΩ¸V˛?ÂÒ:j_k?≈ÒÌ≈Ôc?Íò%ê≥A?Íî;˜'j?ßM;6?ô$WŒ.Â?‰~Ω?ëá@V, c|@&›Fø◊Òƒ@'`òÄîÂ÷@#tø©ö◊ocid_414  @bºä∞»‹ø@Hyﬂs=ÃÃÕD∏Ô
+;9wÖ9	])Gı∑'pKA¨£◊C%!HCﬂáÆA€ÆDï¸Õ; sX8‚~(_`Ë&EpAëôöC!è\CóÓAµôöCÀÆ:tîí8¢(ˇÕÒ')UŸAA∏C#=qCú)AÅ33æÆ{æ—ÎÖæä=q=X4øK5ë=‡·ìpã·=% ‘cùæ|IA€¿f =íITsdó“¯@F°kZ°9¢I_¯Ë¸£Ì&?—[»vMª@Rî¶ÔêÇ   2XMMU_J095934.0+021706@bºã
+ı˝H@Gƒü‰6?ëÎÖ?n{=#◊
+@â¢iV @á¢£◊
+=q?¶ffBuQÏ@33>Ä  "A-Èæ CNz·?‚è\Btı√? =q>u¬èAs	∏ e A¯£◊?¿  BU\)=B'ì⁄í-=Cc%Îñ#¯=L8’Âá˙I:…†ün∫œIF¡KÈ¥3jIPèÓJ('@Fï≤∏ˆ´=2m^Æ¡"@%ÚÊÅaÔ7?•fÄN?Ë∆1T„¨î?˚.ÀªÕÎ8?F1ã@Gí?–ä€”√»^                                   Ä   ¿  ¿  ¿  ¿  Ä              ¿  ¿  ¯                                 Ä                      ¿  ¿  ¿  ¿  ¿                 Ä   ¿  ¿                    Ä   ¿  ¿   Ä         09 59 34.0735333+02 17 06.302000  mCOM AGN Ωè\)ΩÃÃÕB3∏@|ÃÕAÎÖC‰X@>—?æA`ÏŒPQ09 59 34.0735333+02 17 06.302000  m@   C‰X@>—?æA`ÏŒPQ09 59 34.07353+02 17 06.3020  mC‰X@>—    COSMOS2015 	Ê:C‰W@?:=·@:ùIR@;\)Bß·ãA≈ıA»j—AB÷¿@bŒ–Â`AäTTTFFFTFT    ?æA`ÏŒPQ09 59 34.07900+02 17 06.4800J095934.07+021706.4J095934.07+021706.4>è\)>ä=q>"–Â<u¬è>.{>.{<u¬è<u¬è                            Simbad09 59 34.079+02 17 06.48@bºã:ÿä∑@GÛ¸-T@?∂ñG⁄0Bé∞   ?óÃ9ˇ÷CÚ£nÕUU?ÏFÿ
+Bˆp-TÚE"ßñA¯“√Bé∞   ø‡°WÄ|ËËF¡T @b¡« Qª@óŸÈsÕ@4Ø‡«Uï?ÊL[ç≈P@%Ó¢`Ëx$@-»≈xx?Ÿô_S’_°?Êthá®÷M?œB?∑•èq!´K?Ä  ?Ä  ?Ä  @8⁄6A?∞-‡qv@8	QNîπ?¶‚ÎC,•@7Fﬂ∏a‹?ò‚e+”√@7ÌûÄâ'\=ªô@6\/Ä K–AÖ!|·îtÒ?ëú‡uˆ˝"<˜yU∂@Rÿf^Î¿<ˆ'
+0´@50æ Å/@<Ï¿@4õÕ?πSs<o@3®_/:Ä?üæv»¥9X@5/;_Qü/?ñOv_ÿÆ@7ﬁcä	?‡64ÍK@8jíü™T”?’Oﬂ;dZ@6±3ˇ·Õ?∑¸π#¢úx@5E%?T©¶?©Ë>BZÓc@4Xø”¿?∏*ô0æÌ@4˙«‰°÷=›ò@4˚∆üå!‚<u?ëŒØ%;Brusa10 C  @b¡∆˚“s÷@ó‚?$ÿ˝'+@(®oD?Ê∏QÎÖ∏@∞Ó û≤…*E≈õ—û¡Ò≤@ >\&qÉ—@¶√@\¢?˛ô„ ¯∂@”'‡ŸÏ?˙ KÍ∫û?Í–˝≥ıer?„∑),I4&ø◊úÖqƒhz?ËSN¸ΩUa?ÂòV8˘Å¿4]	€Çr¿5ö«_•Ç?˘fR¿ç ¿6ó¿{Ö≤¿5|ﬂÓ¡¿6søÑÂ≠¿6’
+`¨B¿71,Äëä◊¿7À& D…^¿6˜ø–e¿6‡<ÄπŒ√?Û€›¸ü˘0?∞-‡qv?¶‚ÎC,•<«À?¢◊s¸PH<åÁ<Ï¿<o?üæv»¥9X?¢{≤˛≈m]<u@8 ◊ÄÑıû@8Hqˇ˜úÑ@7Çˇ˙ √@7Õ«ˇﬁr@52@BÊ/@4™sÄ*\À@2Ù•ﬂôX@5hÄ@4È'Äwâ§@
+ù¶ZÅ@¡ù˙QjV@†±øûÁ@ai¬;yS?ˇ^ÇbEo?˜]˚C›P?ÒÁx®àJ?‘ Õ«ûê?ı•.zG≈?ı7qk}&ú?ûáY˚ÙÿÖ?gl-Oƒcr?«8‡^*X@dÃ‡ ◊Û@&!ˇ≈Gù@&ºÈAwôï?⁄Ü"S*cid_1309 @b¡«Õy–9@ò3  >◊
+=B.339e£^8-§È'w‡Õ&;Yâ@©ôöC'Û3B\)A £◊Ao
+=8ö≈7«¶&‰N%.U@E¬èC'nA<ÃÕ@ö·HAªÎÖ9&π=8Â÷'Æ„&õ§¯@è
+=C'.A”
+=@ﬂÆ>kÖºı¬è>˙·H<øˆH¯À<Ùùª'˜)<Ì]√?BEH¶‰òÀ≥qQH›àãÆﬁ?z@EÅò∆]ÀH’ºè_Ë?ÂÒ•#ë@$§B ≠^   èXMMU_J100013.3+022657@b¡«.'Z∏@ò"ªÏ™π?∞£◊>u¬è<ı¬èAH   å @QÛ33333?¢è\BaÆ?Ô\)>.{ ŸAt] CËˆ? =qBa£◊?ôôö>kÖAôUU G A»QÏ?∑
+=BEÆ<‰|Û6eìr=@û+µ$=HÒt#•bHÕYïÈímfHÚW˝≈,´H¸ïÎcnë@EÃÿ,’#=k∆ÅèFU?˙yñ¿]ù ?À˛‹∞î@UUEµUR@  ’U]@2™™@˘UV?‡7(À¢é‡                                   Ä   ¿  ¿  ¿  ¿  Ä              ¿  ¿  ¯                                 Ä                      ¿  ¿  ¿  ¿  ¿                 Ä   ¿  ¿                    Ä   ¿  ¿   Ä                                         Ä           ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¯                                      Ä   ¿  ¿  ¿  ¯      10 00 13.33707+02 26 57.0050  '%C:@ø+    COSMOS2015 òC9@ø<ˆîF:IR?;dZAGôA≥B∏Aµ;A,b@ƒ ’{«¯TFTFFFTFF    ?π◊¡ö)g!                                                                  ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¿  Ä   Ä   Ä   Ä                                 ¯      ¯      ¯      Bé∞   ?óÃ9ˇ÷CÚ£nÕUU?ÏFÿ
+Bˆp-TÚD¢tÀÄhOBé∞   ?ï{ÜD)-∆5ú @b”¸¿O(@RõÜ„‡@2˘r ÆÃ1?Î(ü∆⁄DÖ@5Á3@ü,Å@f,/∏a?‚{ »’?ÊsWÊp‚¡?ﬂ;?¨•zxl"h?Ä  ?Ä  ?Ä  @7‹Ÿﬂ⁄∆ã?§á¸π#¢ú@6Hrø:=?ì˜ŒŸá+@5-`ç?Ñº£n@6'_ò<ÄùI@4v¥ˇP≠óA=πÂ ﬂ?}„º”ZÜ=R1:‚@Q™ﬁöT™¿<CLó]TC@3œÿ†?¶;™d√@3?üæv…;â†'@2A—@œ”Ë?ãqué!ñS@3´P¿Ù*?É@N§®¡U@8W†ˇøh`?Èú‡uˆ˝@6´ˇÕ´?™«À)^û@4Ñ˜_Gé4?ëN;Õ5®X@3Æ˘‡+Nb?çÊö‘,<ü@3MﬂˇØx(?°hr∞ ƒú@3è4‡≤\ﬂ<}Û∂@3èùøô£;ùIR?ì:Õ[h£Brusa10 E£0 @b”¸§*Ì@Ró|àÁõ&Â$•)iº?’∏QÎÖ@õæ.6˚E±Iæû≈wÑ?˙.j6îË?¯>‡*w¢œ?Ìœ˙ÍâØ?ˆ9ß;BÃ-?‡‹ßktQ?‘KiäﬁÙ?œ˝π‘¢Ñ$ø⁄ÃxÈˆ©??“ò©ØëR£?—Y”Eå“¿2˜ˇ†^Øπ¿4mn?xª‘?¸VZHå`¿4Ûd`“®Ø¿4nvAÁ¿5B#@vËï¿5≥H I—€¿62”‡ΩDö¿6ÑÔﬂ˜K¸¿5Ì ¿iÁ˚¿5ÁºwØd?˜VÈÒ†¡∞?§á¸π#¢ú?ì˜ŒŸá+< ê.?ê©*0U2;Ëß;™d√;â†'?ãqué!ñS?èæv»¥9X;ùIR@7†`:”;@6tJ ’@5#{ˇTﬂU@6•‡œπ@3æ° ñ'ı@3`¿*'@2µ¿@ÕP@3°ãÄ“"w@3ì|@√>Ø@∫]^Ë@¡L=∆4,@Ä2}*Œ
+@’ﬁú)¶@ a_£‘Öˇ?¯q™∑œ∆?Ú‘í^;ız?÷ÚûÉf?ˆÆcäÈ”n?ˆ-√á©≠?ú∏ñ¥‚À<        ?¡é‚Üruh@öµ     @%R/ﬂ¡ú@%{˛~¡?…#iˇilid_278  @b”¸`UL∞@RÑ‘Œà?0bNDîZ=;#◊
+8ÛE)@Mø'¨éA¨ffC%ÎÖCªÃÕA…ôöA¬ı√9uÎ8ƒz&çœ1%ê}@|(ˆCBèAÅp§@≤è\Dõö;#/E8ÛE)´ñO'ÕÒA´¬èC!W
+C∑qA«∏?kÖ?fff?p£◊<—:P¡≈f=4ÿj˝^Z='\¥¥:*„Hèò≠»üˆHÛ1˛O_@E∂xz!ãHÂk¯Çaÿ?Ã¯óø*>@S\¸¨Pq  fXMMU_J100229.8+023224@b”˚¡¨ﬁ@RG^cc?Ø\)>#◊
+<ı¬èAñ   C @7z·GÆ?ó
+=B"¬è@Hı√>£◊
+A#¨ CHaH?œ\)B$·H@Vff>≥33A'* ê B∞—Ï?û∏RBÖ<‹>¢ö#≥=VÈ'W‚˚<=Uy|ÿ=ùòHôØ†∏T†]H‡Œi¶·‰QHﬂÅk?ëh@EÖ/˜ŒuTº¡Ç®´?Äøìô;O%ö¯      øÙˇ˛∑ﬂˇÑ@4Ôˇ˝ŸˇˇøßˇˆAù ?Ô@,Ç 010 02 29.8941333+02 32 25.098000All  *ôAÃ  A¿  Aã33AÜff   ØFRII       Cü„@"î[?…j˜˚¸á‰10 02 29.894+02 32 25.08All  *ôJ100229.89+023225.0Cü„@"îF@J·H>"–Â>›/sFRII     FRIIT  {Aø\)CôöJ100229+023225TAll  *ô@Úè\A7\)F XœC15E  10 02 29.8941333+02 32 25.098000  *ôFRII    ¿è\¿ffB1∏R@>∏RA(ˆCü„@"î[?…j˜˚¸á‰                                Ä   ¿  ¿  ¿  ¯      10 02 29.89413+02 32 25.0980  *ôCü„@"î[   COSMOS2015 XœCüÂ@"îh=œ™Œ    >›/EF A¬\dAƒbA-qñ@∞%ÑÙ«TFFFFFTFT    ?…j˜˚¸á‰10 02 29.89400+02 32 25.2900J100229.89+023225.2J100229.89+023225.2                    @µâ7    <¥9XA»  @†                ˇˇˇùSimbad10 02 29.894+02 32 25.29@b”¸a¬ç@RßcŒMG?«-ﬂ)ô£ëBé∞   ?óÃ9ˇ÷CÚ£nÕUU?ÏFÿ
+Bˆp-TÚE]R61G<Bé∞   ?“‹˜Íq-œ∆‹ @b”◊ﬂñ @^˝ˇtø≈@6EÄ¶Éç?Ìnàﬂ72ú@(¬⁄√¥?‚înñ@øŒ:ã?ÈâZ[ñ)?)#£?»ë)àèÜ?Ä  ?Ä  ?Ä  @9i?^∫†?¿|Ñµ‹∆?@7‚G@0q∏?¶+jÁ’fœ@6…0øªlR?ñìtºj@7aTøtıu<ÛMj@6ã)`Kö2Aó§2Ü¿?ì©*0U2a<¸i¯%[ù@Ríˆ|…¿<‡Î#˙€˛@6>æﬂ§?Ê<àŒp@5˚⁄`3F~<ö‘,@4 h‡î)Ó?≥n.±ƒ2 @6DÄf¬≠?∏l"h	‘ï@8FIqc?Á~êˇó$t@82@ø„∞>?’Ë>BZÓc@6`h‡î)Ó?µoiDg8@61 `»ó¥?¡©˚ÁlãD@6è“Ú‰è?Â©˚ÁlãD@6≥ rÏá=ì›ò@63Fﬂ∏a‹<ïÈ‚?îòc8¥|Brusa10 E°∏ @b”◊ù
+gb@_A1"∏'Óﬁı(fïï@	
+=~–X@⁄ Á‡i¢E¨&CŒ&≈@÷h¬a9 @“›¢›Â˙?¸—˙Éø<¡@^Rﬁ %S?˙®“º–÷G?Ù≠Ë:Á\õ?Ë"I $.øÛPxæWø?ÒÎ9’„Ó?Ò,ı+êßÉ¿8j¿h:|¿9õÄèô?”HœË
+?¿¿:&ı‡¬M¿9Ì|ÄÑﬁ¿:Bj¿h:|¿:/&ü¶˘‘¿9Ë>¿//ò¿9ÕñüÍ≥¿:&ü0≤O¿:èdd.?˜Àl¡–?¿|Ñµ‹∆??¶+jÁ’fœ<∞ ≈?ûi≠B√…Ô<ùIR<àŒp<ö‘,?≥n.±ƒ2 ?≤{≤˛≈m]<ïÈ‚@8Å™Äq™g@7‹Bﬂx†¸@7@ °∞@7ò≤@Yåc@6_∑º]Í@5æ<‡[@3Ê`¿48@6,¶Ä1Èá@6#üXˆ;?»KÁ_J?Œ2‡˝‹9Q?”MÍŸ˛∑?–í∞Ï©?“çòód5?‘A›ÖÅ¥°?“ÌOé≥åä?«‰–œêÃk?”›Ë~;?‘=´«ôá%?ì#ÆZÒæ?∫~¯-£ß:?ﬁä.¬ã*k@ád8 µ˝@'bM˛êî7@'€¬ ¿ ?Á˙˝£b\5lid_460  @b”◊;-Rü@^›u≥ÿ¨>   D®R:ÁˇX8˚®É)uÖ'∑”Ak
+=C¯RCNè\Añ=qC˙˝q:ö™:8πô(D&< yAUGÆBˇè\B˜∏RAj{C6\):"Dc8{®Ç(™<o'ñA%∏ChˆB†\A=p§æW
+=æè\)æ\)=œ’Êﬂ=w:aAÌL=öíE±wÎI=} O(IO~ÃDq¸”@Fí‰f ¥IY?	3[¬ç?◊cü?û#@Q–õi'  7XMMU_J100228.8+024017@b”◊Ì=Ü@_b∂Æ}V?¶ff?(ı√=#◊
+@¡|E @tê£◊
+=q?°GÆB<33?£◊
+>aGÆ AâÄ  BRz·?⁄·HBAGÆ?òQÏ>u¬èA°X3 ? Alz·?•∏B/è\<˘À¬©Î—==·`/π=?C≈§ôÀI5ˇ)ÌËÃIC‘ìùÂ=◊IETÑﬁÅ˘@F}:ZÆÇ)<˝Oâ.9Jƒ?ÅEë$£?ã£ Ãü™˙?¡t[Ù]?¸Ÿ6Qùº¬>¢‡?¯>?Ê&HV˝Z¥                                   Ä   ¿  ¿  ¿  ¿  Ä              ¿  ¿  ¯                                 Ä                      ¿  ¿  ¿  ¿  ¿                 Ä   ¿  ¿                    Ä   ¿  ¿   Ä                                         Ä           ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¯                                      Ä   ¿  ¿  ¿  ¯      10 02 28.81827+02 40 16.9250  ICûΩ@*˜±    COSMOS2015 ÀŸCûª@*¯>Œ:Éo@I&ÈCæ]A≈%A≈¸ºALBÒ@Ç?=p£◊
+TTTFFFTFF    ?øKU⁄`ÅÍ10 02 28.82000+02 40 16.8800J100228.82+024016.8J100228.82+024016.8>ä=q>îz·>&Èy<ìtº>+>+<ìtº<ìtº                            Simbad10 02 28.820+02 40 16.88@b”◊π Æƒ@^Ô©X Ã?æsJE∆ñBé∞   ?óÃ9ˇ÷CÚ£nÕUU?ÏFÿ
+Bˆp-TÚEâ¬á%ÀµBé∞   øÂxnèwù∆h @b‘Ò‡,l?¸zÊªã[È@4µøjª?‹ﬁã;26@/k9‹>Z@t€Âƒ⁄.?·¢äDø0?ÂX%[\?(ˆ?∫[Täú?Ä  ?Ä  @   @9D2¿F¨ç?π∫^5?|Ó@7ﬂ;_Qü/?•µsÍ≥g°@6€¿?`h?ñ°a‰˜e˛@7 ≥_=}9=ˆ+@6M‡]£IAq+kÆ∫w≤?éÏø±[W?<˙Ï∏⁄˛z@RRvY˘q¿<ÊÍVˆ[Ë@5Ôˇ◊º<+@4{)`Kö2;˘	l@2ﬁó„ÂÓ?õöu%F@5 |≠_I?ú∆?º@6ø `x‹?«s¸PH@80; á}?’JÙÿD–@6!‘±û?¥9XbM”@52M‡]£I?ß€Ùá¸π$@4îÅ_Êe?ø±[W>´6@4›ø@O¬=M@4‰zﬂö.Î<+?ï“»qzBrusa10 Dˇ` @b‘Ò”ÌR~?¸z‡;>öp(-÷≈)'àÆ?·GÆz·H@®GlaÍ°©Eæ¸˝”WÌÇ@¶r˚†Ô@ ˆQElÒõ?¸)òæ&A?ˇzímUmÒ?ÛY}'’1?Ê≥Ì£)Ê?·<∑·É=7ø—∏∆ÍπG?‰ΩÎæ)õ€?Â; ∏¿3fÓ_ƒã∂¿4µ·`»W?¸Ú€ı^ºP¿5],Bªf¿4£HÀí:¿5ôú†µŒ¿6% k∞R¿6ÖW¥¿7PÿÁ&¿6>Ç¿9@ì¿6:†0^?ÙÔ0” ?π∫^5?|Ó?•µsÍ≥g°<µ?¢˛≈m\˙≠<we˛<+;˘	l?õöu%F?†â†'RTa<+@9)Í?§Zæ@8v¿PΩà@6˜Ü?I¡Î@7ß∞?ŒL)@5	ﬂÄ-∑…@4Ñ@&`Ω@2—-…@4ﬂ‰`gH‰@4⁄ˇ¥Ä¶@-Ó‹¬V@
+øﬁß¿§@.óöªÿâ@‹[∂	<@ J˘då?˜4-n?Ò .ƒ8©ï?—–1‹?ı#†Uu}?ÙΩùÄ⁄Ü?°±	!Á±U?`©0íD;?“R˙‰7Lù@]∂     @%êí H$\@&'á Qª?Ê≤∑æ¨›”lid_1679 @b‘≤h%6?¸zÍèiu>nóçD\3:Ò,(8‰ñÓ)›'ÚAÜı√C!{CÜp§A´
+=D	ä·:Éo8ö≈(Nz&_∞AY¬èCﬁ∏Cz·AÄQÏCµ4{:]?·8ã´ö(Ëbø'ˇ[AJè\C8áÆBˆôöAiôöΩÃÃÕæ#◊
+Ω#◊
+<ˇÎ¿ñ«=“ù∆ŸE= ˚…gıF‘H◊Ç'¶_ÅBHÙ}ç∏œˇÔ@E∫V
+qﬁÑH˘të›ˆw?‡ëæ–özŒ@‰RÍØj  ˚XMMU_J100237.0+014648@b‘Ô6ÔÄV?¸{K/©:˜?åÃÕ?xQÏ=LÃÕ@§ÚŒ¯ @áÎÖ∏R?ó
+=BHQÏ@n{>ôôöàAC C¿‡ ?‘z·BLè\@◊
+>ä=qAQµq q Bu(ˆ?¶ffB7
+==Î^Ü¶µ=KƒI<(ì=Y)T&$DHﬁ–©ß4ÂiH\Otô…ÄH˝ã[[q"æ@EŒ≠£f∫á=\3dè@⁄√˝ÿë2?„˝13ñÛ_?˚a¶N“QT@ ˝\NØ}ﬂ?€2@uq|?Û#\kË                                   Ä   ¿  ¿  ¿  ¿  Ä              ¿  ¿  ¯                                 Ä                      ¿  ¿  ¿  ¿  ¿                 Ä   ¿  ¿                    Ä   ¿  ¿   Ä                                         Ä           ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¯                                      Ä   ¿  ¿  ¿  ¯      10 02 37.08573+01 46 47.9780  "∫Cßè?„÷ÿ    IRAC        ØCßè?„÷ù<Ìëh;Dõ¶?+A`®cA≤ÒSA¥À÷            TFFFFFTFF   ?§üµØVË                                                                  ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¿  ¿  Ä   Ä   Ä   Ä                                 ¯      ¯      ¯      Bé∞   ?óÃ9ˇ÷CÚ£nÕUU?ÏFÿ
+Bˆp-TÚD†◊úU€s™Bé∞   ø“d≈&@º                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
